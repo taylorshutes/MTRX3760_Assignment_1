@@ -6,8 +6,7 @@ find_package(rclcpp REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
-find_package(tf2 REQUIRED)
-find_package(std_msgs REQUIRED)
+find_package(tf2 REQUIRED)   # ✅ added
 
 include_directories(include)
 
@@ -21,8 +20,7 @@ ament_target_dependencies(taylor_driver_node
   geometry_msgs
   sensor_msgs
   nav_msgs
-  tf2   
-  std_msgs
+  tf2   # ✅ added
 )
 
 install(TARGETS

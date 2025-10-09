@@ -4,7 +4,6 @@
 #include <geometry_msgs/msg/twist_stamped.hpp>
 #include <sensor_msgs/msg/laser_scan.hpp>
 #include <nav_msgs/msg/odometry.hpp>
-#include <std_msgs/msg/string.hpp>
 
 enum class TaylorState { FORWARD, TURN, RIGHT_WALL_FIND };
 
@@ -17,7 +16,6 @@ public:
 private:
   void scan_callback(const sensor_msgs::msg::LaserScan::SharedPtr msg);
   void odom_callback(const nav_msgs::msg::Odometry::SharedPtr msg);
-  void wall_callback(const std_msgs::msg::String::SharedPtr msg);
   void on_timer();
 
   double normalize_angle(double a);
@@ -27,11 +25,6 @@ private:
   TaylorState state_;
   double current_yaw_;
   double target_yaw_;
-  int right_wall_seen_;
-  int green_wall_seen_;
-  int skip_right_;
-  int counter;
-  int target_counter;
 
   // --- Distances
   float front_distance_;
@@ -43,11 +36,6 @@ private:
   rclcpp::Publisher<geometry_msgs::msg::TwistStamped>::SharedPtr pub_;
   rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr scan_sub_;
   rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr odom_sub_;
-  rclcpp::Subscription<std_msgs::msg::String>::SharedPtr wall_sub_;
   rclcpp::TimerBase::SharedPtr timer_;
-
-  std::string last_colour_ {"none"};
-
-
 };
 

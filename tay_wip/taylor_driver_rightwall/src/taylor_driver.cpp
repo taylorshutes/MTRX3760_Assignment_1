@@ -1,10 +1,10 @@
 #include "taylor_driver/taylor_driver.hpp"
+#include "taylor_driver/taylor_driver.hpp"
 #include <limits>
 #include <chrono>
 #include <cmath>
 #include <tf2/LinearMath/Quaternion.h>
 #include <tf2/LinearMath/Matrix3x3.h>
-#include <std_msgs/msg/string.hpp>
 
 using namespace std::chrono_literals;
 
@@ -22,21 +22,12 @@ TaylorDriver::TaylorDriver() : rclcpp::Node("taylor_driver")
     10,
     std::bind(&TaylorDriver::odom_callback, this, std::placeholders::_1));
 
-  wall_sub_ = this->create_subscription<std_msgs::msg::String>(
-    "/wall_colour", 10, 
-    std::bind(&TaylorDriver::wall_callback, this, std::placeholders::_1));
-
   timer_ = this->create_wall_timer(100ms, std::bind(&TaylorDriver::on_timer, this));
 
   front_distance_ = std::numeric_limits<float>::infinity();
   current_yaw_ = 0.0;
   target_yaw_ = 0.0;
   state_ = TaylorState::FORWARD;
-  right_wall_seen_ = 0;
-  green_wall_seen_ = 0;
-  skip_right_ = 0;
-  counter = 0;
-  target_counter = 1;
 
   RCLCPP_INFO(this->get_logger(), "Taylor driver started (forward + 90° turns)");
 }
@@ -44,18 +35,6 @@ TaylorDriver::TaylorDriver() : rclcpp::Node("taylor_driver")
 TaylorDriver::~TaylorDriver()
 {
   stop_robot();
-}
-
-void TaylorDriver::wall_callback(const std_msgs::msg::String::SharedPtr msg)
-{
-last_colour_ = msg->data;
-if (last_colour_ == "red") {
-  right_wall_seen_ = 1; // skip the very next right opportunity
-//RCLCPP_INFO(this->get_logger(), "ColourDetector: RED → set skip_right_=1 (one-shot)");
-} else if (last_colour_ == "green") {
-  green_wall_seen_ = 1;
-  skip_right_ = 0;
-}
 }
 
 void TaylorDriver::scan_callback(const sensor_msgs::msg::LaserScan::SharedPtr msg)
@@ -110,7 +89,6 @@ void TaylorDriver::odom_callback(const nav_msgs::msg::Odometry::SharedPtr msg)
   m.getRPY(roll, pitch, yaw);
   current_yaw_ = yaw;
 }
-
 void TaylorDriver::on_timer()
 {
   geometry_msgs::msg::TwistStamped cmd;
@@ -119,21 +97,11 @@ void TaylorDriver::on_timer()
 
   static int pause_ticks = 0;  // counter for short pauses
   double angular_speed = 0.6;
-  double forward_speed = 0.2;
+  double forward_speed = 0.08;
   double tol = 0.05;
-  double stop_dist = 0.4;
-  double open_dist = 0.7;
+  double stop_dist = 0.25;
+  double open_dist = 1.0;
   double free_limit = 0.6;
-
-  // Finish guard: stop immediately if green seen (works in all branches)
-  if (green_wall_seen_) {
-    cmd.twist.linear.x = 0.0;
-    cmd.twist.angular.z = 0.0;
-    stop_robot();                 // publishes a zero TwistStamped too
-    RCLCPP_INFO(this->get_logger(), "MAZE COMPLETED — ROBOT STOPPED");
-    // pub_->publish(cmd);           // harmless duplicate zero; keeps /cmd_vel consistent
-    return;                       // bail out of on_timer()
-  }
 
   switch (state_)
   {
@@ -146,119 +114,76 @@ void TaylorDriver::on_timer()
       
       if (right_open)
       {
-        if (skip_right_)
-        {    
-          cmd.twist.linear.x = forward_speed;
-          cmd.twist.angular.z = 0.0;
+        // stop and print once
+        cmd.twist.linear.x = forward_speed;
+        cmd.twist.angular.z = 0.0;
 
-          target_counter++;
-
-          if (pause_ticks == 0)
-          {
-            RCLCPP_INFO(get_logger(), "Skipping this right (one-shot)");
-          }
-
-          pause_ticks++;
-
-          // stay stopped for ~1 second (10 * 100ms = 1s)
-          if (pause_ticks > 30)
-          {
-            pause_ticks = 0;
-            skip_right_ = 0;
-            state_ = TaylorState::RIGHT_WALL_FIND;
-          }
+        if (pause_ticks == 0)
+        {
+          RCLCPP_INFO(this->get_logger(),
+                      "Right open → turning RIGHT 90°  F=%.2f  R=%.2f  L=%.2f  Yaw=%.2f",
+                      front_distance_, right_distance_, left_distance_, current_yaw_);
         }
 
-        else
+        pause_ticks++;
+
+        // stay stopped for ~1 second (10 * 100ms = 1s)
+        if (pause_ticks > 15)
         {
-          // stop and print once
-          cmd.twist.linear.x = forward_speed;
-          cmd.twist.angular.z = 0.0;
-
-          if (pause_ticks == 0)
-          {
-            RCLCPP_INFO(this->get_logger(),
-                        "Right open → turning RIGHT 90°  F=%.2f  R=%.2f  L=%.2f  Yaw=%.2f",
-                        front_distance_, right_distance_, left_distance_, current_yaw_);
-          }
-
-          pause_ticks++;
-
-          // stay stopped for ~1 second (10 * 100ms = 1s)
-          if (pause_ticks > 15)
-          {
-            pause_ticks = 0;
-            state_ = TaylorState::TURN;
-            target_yaw_ = normalize_angle(current_yaw_ - 4 * M_PI / 9); // turn ~80°
-          }
+          pause_ticks = 0;
+          state_ = TaylorState::TURN;
+          target_yaw_ = normalize_angle(current_yaw_ - 4 * M_PI / 9); // turn ~80°
         }
       }
 
-      else if (front_open)
+      else if (front_open) 
       {
-        // Use softer/straighter tracking ONLY while we're skipping the next right
-        const bool skipping = (skip_right_ == 1);
+        //tunables
+        double desired_right_distance_ = 0.3;
+        double dist_gain = 0.7;
+        double angle_gain = 0.5;
+        double max_angle = 1.5;
+        double error_dist = 0.02;
 
-        // Normal follower (your “works well” profile)
-        double desired_right_distance_ = skipping ? 0.45 : 0.30;   // farther from right wall while skipping
-        double dist_gain              = skipping ? 0.35 : 0.70;   // softer distance gain while skipping
-        double angle_gain             = skipping ? 0.25 : 0.50;   // softer diagonal gain while skipping
-        double max_angle              = skipping ? 0.80 : 1.50;   // cap turning while skipping
-        double error_dist             = 0.02;
-
-        // Same error calc you already use
         double error_distance = desired_right_distance_ - right_distance_;
         if (std::fabs(error_distance) < error_dist) error_distance = 0.0;
 
-        // Keep your diagonal term; damp it when skipping so you pass the opening straighter
-        double error_diagonal = right_distance_ * std::sqrt(2.0) - front_right_distance_;
+        //double desired_diagonal = desired_right_distance_ * std::sqrt(2.0);
+        double error_diagonal =  right_distance_ * std::sqrt(2.0) - front_right_distance_;
         if (std::fabs(error_diagonal) < error_dist) error_diagonal = 0.0;
-        if (skipping) error_diagonal *= 0.5;
 
         double omega = dist_gain * error_distance + angle_gain * error_diagonal;
-        if (omega >  max_angle) omega =  max_angle;
+        if (omega > max_angle) omega = max_angle;
         if (omega < -max_angle) omega = -max_angle;
 
-        cmd.twist.linear.x  = forward_speed;
+
+        cmd.twist.linear.x = forward_speed;
         cmd.twist.angular.z = omega;
         pause_ticks = 0;
       }
 
       else if (left_open)
       {
+        // stop and print once
+        cmd.twist.linear.x = 0.0;
+        cmd.twist.angular.z = 0.0;
 
-        else if (!green_wall_seen_)
+        if (pause_ticks == 0)
         {
-          cmd.twist.linear.x = 0.0;
-          cmd.twist.angular.z = 0.0;
-
-          if (pause_ticks == 0)
-          {
-            RCLCPP_INFO(this->get_logger(),
-                        "Front blocked, Left open → turning LEFT 90°  F=%.2f  R=%.2f  L=%.2f  Yaw=%.2f",
-                        front_distance_, right_distance_, left_distance_, current_yaw_);
-          }
-
-          pause_ticks++;
-
-          // stay stopped for ~1.5 seconds (15 * 100ms = 1.5s)
-          if (pause_ticks > 15)
-          {
-            pause_ticks = 0;
-            state_ = TaylorState::TURN;
-            target_yaw_ = normalize_angle(current_yaw_ +  M_PI / 2);
-          }
-          if (right_wall_seen_ && !skip_right_)  {
-            counter++;
-            if (counter == target_counter)  {
-              skip_right_ = 1;
-              right_wall_seen_ = 0; 
-              counter = 0;
-              RCLCPP_INFO(this->get_logger(), "Will skip right turn");
-            }
-          }
+          RCLCPP_INFO(this->get_logger(),
+                      "Front blocked, Left open → turning LEFT 90°  F=%.2f  R=%.2f  L=%.2f  Yaw=%.2f",
+                      front_distance_, right_distance_, left_distance_, current_yaw_);
         }
 
+        pause_ticks++;
+
+        // stay stopped for ~1.5 seconds (15 * 100ms = 1.5s)
+        if (pause_ticks > 15)
+        {
+          pause_ticks = 0;
+          state_ = TaylorState::TURN;
+          target_yaw_ = normalize_angle(current_yaw_ + 4 * M_PI / 9);
+        }        
       }
           
       else
@@ -304,12 +229,10 @@ void TaylorDriver::on_timer()
 
     case TaylorState::RIGHT_WALL_FIND:
     {
-      double desired_right_distance_ = 0.35;
       const bool right_open = (right_distance_ > open_dist);
       const bool front_open = (front_distance_ > stop_dist);
       const bool left_open = (left_distance_ > open_dist);
-
-      if (right_distance_ <= desired_right_distance_)
+      if (right_distance_ <= stop_dist)
       {
         state_ = TaylorState::FORWARD;
         RCLCPP_INFO(this->get_logger(), "Right wall found → forward");
@@ -318,27 +241,14 @@ void TaylorDriver::on_timer()
       {
         cmd.twist.linear.x = forward_speed;
         cmd.twist.angular.z = 0.0;
-
       }
-      else if (!front_open)
+      else if (!front_open && right_distance_ > 0.5)
       {
+        cmd.twist.linear.x = 0.0;
+        cmd.twist.angular.z = 0.0;  // turn left
 
-        if (pause_ticks == 0)
-        {
-          RCLCPP_INFO(this->get_logger(),
-                      "Front blocked, Left open → turning LEFT 90°  F=%.2f  R=%.2f  L=%.2f  Yaw=%.2f",
-                      front_distance_, right_distance_, left_distance_, current_yaw_);
-        }
-
-        pause_ticks++;
-
-                // stay stopped for ~1.5 seconds (15 * 100ms = 1.5s)
-        if (pause_ticks > 15)
-        {
-          pause_ticks = 0;
-          state_ = TaylorState::TURN;
-          target_yaw_ = normalize_angle(current_yaw_ + M_PI / 2);
-        } 
+        state_ = TaylorState::TURN;
+        target_yaw_ = normalize_angle(current_yaw_ + M_PI / 2);
       }
       break;
     }
