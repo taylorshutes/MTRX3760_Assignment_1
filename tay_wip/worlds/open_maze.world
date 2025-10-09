@@ -165,14 +165,14 @@
 
       <!-- ================== Finish Wall ================== -->
       <model name="finish_wall">
-        <pose>-4.11 -5.0 0 0 0 1.5708</pose>
+        <pose>-4.8 -5.5 0 0 0 1.5708</pose>
         <static>true</static>
         <link name="link">
           <collision name="collision">
-            <geometry><box><size>0.5 0.2 1</size></box></geometry>
+            <geometry><box><size>1 0.2 1</size></box></geometry>
           </collision>
           <visual name="visual">
-            <geometry><box><size>0.5 0.2 1</size></box></geometry>
+            <geometry><box><size>1 0.2 1</size></box></geometry>
             <material>
               <ambient>0 1 0 1</ambient>
               <diffuse>0 1 0 1</diffuse>
@@ -185,14 +185,14 @@
 
       <!-- ================== Start Wall ================== -->
       <model name="start_wall">
-        <pose>-4.11 -4.5 0 0 0 1.5708</pose>
+        <pose>-4.55 -4.3 0 0 0 0</pose>
         <static>true</static>
         <link name="link">
           <collision name="collision">
-            <geometry><box><size>0.5 0.2 1</size></box></geometry>
+            <geometry><box><size>0.7 0.2 1</size></box></geometry>
           </collision>
           <visual name="visual">
-            <geometry><box><size>0.5 0.2 1</size></box></geometry>
+            <geometry><box><size>0.7 0.2 1</size></box></geometry>
             <material>
               <ambient>1 0 0 1</ambient>     
               <diffuse>1 0 0 1</diffuse> 
