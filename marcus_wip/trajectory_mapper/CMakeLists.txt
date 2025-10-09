@@ -45,4 +45,9 @@ install(DIRECTORY include/
   DESTINATION include
 )
 
+# Install Python scripts
+install(PROGRAMS
+  scripts/maze_visualizer.py
+  DESTINATION lib/${PROJECT_NAME}
+)
 ament_package()
