@@ -119,10 +119,10 @@ void TaylorDriver::on_timer()
 
   static int pause_ticks = 0;  // counter for short pauses
   double angular_speed = 0.6;
-  double forward_speed = 0.25;
+  double forward_speed = 0.2;
   double tol = 0.05;
-  double stop_dist = 0.3;
-  double open_dist = 0.8;
+  double stop_dist = 0.4;
+  double open_dist = 0.6;
   double free_limit = 0.6;
 
 
@@ -188,9 +188,9 @@ void TaylorDriver::on_timer()
       else if (front_open) 
       {
         //tunables
-        double desired_right_distance_ = 0.3;
-        double dist_gain = 0.6;
-        double angle_gain = 0.4;
+        double desired_right_distance_ = 0.25;
+        double dist_gain = 0.8;
+        double angle_gain = 0.5;
         double max_angle = 1.5;
         double error_dist = 0.02;
 
@@ -199,7 +199,10 @@ void TaylorDriver::on_timer()
 
         //double desired_diagonal = desired_right_distance_ * std::sqrt(2.0);
         double error_diagonal =  right_distance_ * std::sqrt(2.0) - front_right_distance_;
-        if (std::fabs(error_diagonal) < error_dist) error_diagonal = 0.0;
+        if (front_right_distance_ >= 1.8 * right_distance_) {
+          error_diagonal = 0;
+        }
+        else if (std::fabs(error_diagonal) < error_dist) error_diagonal = 0.0;
 
         double omega = dist_gain * error_distance + angle_gain * error_diagonal;
         if (omega > max_angle) omega = max_angle;
@@ -244,7 +247,7 @@ void TaylorDriver::on_timer()
           {
             pause_ticks = 0;
             state_ = TaylorState::TURN;
-            target_yaw_ = normalize_angle(current_yaw_ + M_PI / 2);
+            target_yaw_ = normalize_angle(current_yaw_ +  M_PI / 2);
           }
           if (right_wall_seen_ && !skip_right_)  {
             counter++;
@@ -302,7 +305,7 @@ void TaylorDriver::on_timer()
 
     case TaylorState::RIGHT_WALL_FIND:
     {
-      double desired_right_distance_ = 0.25;
+      double desired_right_distance_ = 0.4;
       const bool right_open = (right_distance_ > open_dist);
       const bool front_open = (front_distance_ > stop_dist);
       const bool left_open = (left_distance_ > open_dist);

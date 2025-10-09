@@ -31,10 +31,10 @@ def generate_launch_description():
     ros_gz_sim = get_package_share_directory('ros_gz_sim')
 
     use_sim_time = LaunchConfiguration('use_sim_time', default='true')
-    x_pose = LaunchConfiguration('x_pose', default='0.5')
-    y_pose = LaunchConfiguration('y_pose', default='0.2')
+    x_pose = LaunchConfiguration('x_pose', default='2')
+    y_pose = LaunchConfiguration('y_pose', default='2')
     z_pose = LaunchConfiguration('z_pose', default='0.01')
-    yaw    = LaunchConfiguration('yaw',    default='1.5708')
+    yaw    = LaunchConfiguration('yaw',    default='-1.5708')
 
 
     world = os.path.join(
