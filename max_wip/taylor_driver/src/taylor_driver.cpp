@@ -122,7 +122,7 @@ void TaylorDriver::on_timer()
   double forward_speed = 0.2;
   double tol = 0.05;
   double stop_dist = 0.4;
-  double open_dist = 0.6;
+  double open_dist = 0.7;
   double free_limit = 0.6;
 
 
@@ -188,10 +188,10 @@ void TaylorDriver::on_timer()
       else if (front_open) 
       {
         //tunables
-        double desired_right_distance_ = 0.25;
-        double dist_gain = 0.8;
-        double angle_gain = 0.5;
-        double max_angle = 1.5;
+        double desired_right_distance_ = 0.35;
+        double dist_gain = 0.4;
+        double angle_gain = 0.3;
+        double max_angle = 1.0;
         double error_dist = 0.02;
 
         double error_distance = desired_right_distance_ - right_distance_;
@@ -217,16 +217,15 @@ void TaylorDriver::on_timer()
       else if (left_open)
       {
 
-        if (green_wall_seen_){
-
-          cmd.twist.linear.x = 0.0;
-          cmd.twist.angular.z = 0.0;
-
-          RCLCPP_INFO(this->get_logger(), "MAZE COMPLETED!");
-          pub_->publish(cmd);
-          return;
-
+        if (green_wall_seen_) {
+            cmd.twist.linear.x = 0.0;
+            cmd.twist.angular.z = 0.0;
+            RCLCPP_INFO(this->get_logger(), "MAZE COMPLETED!");
+            pub_->publish(cmd);
+            timer_->cancel();   // stop periodic callbacks
+            return;
         }
+
 
         else if (!green_wall_seen_)
         {
