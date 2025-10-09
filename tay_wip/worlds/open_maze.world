@@ -1,0 +1,207 @@
+<?xml version="1.0"?>
+<sdf version="1.8">
+  <world name="open_maze">
+
+      <!-- ================== Gazebo Core Systems ================== -->
+      <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics"/>
+      <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands"/>
+      <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"/>
+      <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
+        <render_engine>ogre2</render_engine>
+      </plugin>
+      <plugin filename="gz-sim-imu-system" name="gz::sim::systems::Imu"/>
+
+      <!-- ================== Ground Plane ================== -->
+      <model name="ground">
+        <static>true</static>
+        <link name="ground_link">
+          <collision name="ground_collision">
+            <geometry>
+              <plane>
+                <normal>0 0 1</normal>
+                <size>20 20</size>
+              </plane>
+            </geometry>
+          </collision>
+          <visual name="ground_visual">
+            <geometry>
+              <plane>
+                <normal>0 0 1</normal>
+                <size>20 20</size>
+              </plane>
+            </geometry>
+            <material>
+              <ambient>0.5 0.5 0.5 1</ambient>
+              <diffuse>0.5 0.5 0.5 1</diffuse>
+            </material>
+          </visual>
+        </link>
+      </model>
+
+      <!-- ================== Sun Light ================== -->
+      <light name="sun" type="directional">
+        <cast_shadows>true</cast_shadows>
+        <pose>0 0 10 0 -0 0</pose>
+        <diffuse>0.8 0.8 0.8 1</diffuse>
+        <specular>0.1 0.1 0.1 1</specular>
+        <direction>-0.5 0.5 -1</direction>
+      </light>
+
+      <!-- ========================================================= -->
+      <!-- Inner maze walls (all connected to boundary).             -->
+      <!-- ========================================================= -->
+
+      <!-- ================== Inner Wall 1 ================== -->
+      <model name="inner_wall1">
+        <pose>-4 -3.4 0 0 0 1.5708</pose> <!-- rotate 90° -->
+        <static>true</static>
+        <link name="link">
+          <collision name="collision">
+            <geometry><box><size>3.8 0.2 1</size></box></geometry>
+          </collision>
+          <visual name="visual">
+            <geometry><box><size>3.8 0.2 1</size></box></geometry>
+          </visual>
+        </link>
+      </model>
+
+      <!-- ================== Inner Wall 2 ================== -->
+      <model name="inner_wall2">
+        <pose>-2.7 -1.4 0 0 0 0</pose>
+        <static>true</static>
+        <link name="link">
+          <collision name="collision">
+            <geometry><box><size>3 0.2 1</size></box></geometry>
+          </collision>
+          <visual name="visual">
+            <geometry><box><size>3 0.2 1</size></box></geometry>
+          </visual>
+        </link>
+      </model>
+
+      <!-- ================== Inner Wall 3 ================== -->
+      <model name="inner_wall3">
+        <pose>-4.1 -3.4 0 0 0 1.5708</pose> <!-- rotate 90° -->
+        <static>true</static>
+        <link name="link">
+          <collision name="collision">
+            <geometry><box><size>3.8 0.2 1</size></box></geometry>
+          </collision>
+          <visual name="visual">
+            <geometry><box><size>3.8 0.2 1</size></box></geometry>
+          </visual>
+        </link>
+      </model>   
+
+      <!-- ================== Inner Wall 6 ================== -->
+      <model name="inner_wall6">
+        <pose>-1.3 -1.7 0 0 0 1.5708</pose> <!-- rotate 90° -->
+        <static>true</static>
+        <link name="link">
+          <collision name="collision">
+            <geometry><box><size>0.5 0.2 1</size></box></geometry>
+          </collision>
+          <visual name="visual">
+            <geometry><box><size>0.5 0.2 1</size></box></geometry>
+          </visual>
+        </link>
+      </model>
+
+      <!-- ================== Inner Wall 7 ================== -->
+      <model name="inner_wall7">
+        <pose>-1.4 -3.9 0 0 0 1.5708</pose> <!-- rotate 90° -->
+        <static>true</static>
+        <link name="link">
+          <collision name="collision">
+            <geometry><box><size>2 0.2 1</size></box></geometry>
+          </collision>
+          <visual name="visual">
+            <geometry><box><size>2 0.2 1</size></box></geometry>
+          </visual>
+        </link>
+      </model>
+
+      <!-- ================== Inner Wall 8 ================== -->
+      <model name="inner_wall8">
+        <pose>-2.3 -3 0 0 0 0</pose>
+        <static>true</static>
+        <link name="link">
+          <collision name="collision">
+            <geometry><box><size>1.8 0.2 1</size></box></geometry>
+          </collision>
+          <visual name="visual">
+            <geometry><box><size>1.8 0.2 1</size></box></geometry>
+          </visual>
+        </link>
+      </model>
+
+      <!-- ================== Inner Wall 9 ================== -->
+      <model name="inner_wall9">
+        <pose>-3.1 -3.9 0 0 0 1.5708</pose> <!-- rotate 90° -->
+        <static>true</static>
+        <link name="link">
+          <collision name="collision">
+            <geometry><box><size>2 0.2 1</size></box></geometry>
+          </collision>
+          <visual name="visual">
+            <geometry><box><size>2 0.2 1</size></box></geometry>
+          </visual>
+        </link>
+      </model>
+
+      <!-- ================== Inner Wall 12 ================== -->
+      <model name="inner_wall12">
+        <pose>-2.3 -4.8 0 0 0 0</pose>
+        <static>true</static>
+        <link name="link">
+          <collision name="collision">
+            <geometry><box><size>1.8 0.2 1</size></box></geometry>
+          </collision>
+          <visual name="visual">
+            <geometry><box><size>1.8 0.2 1</size></box></geometry>
+          </visual>
+        </link>
+      </model>
+
+      <!-- ================== Finish Wall ================== -->
+      <model name="finish_wall">
+        <pose>-4.11 -5.0 0 0 0 1.5708</pose>
+        <static>true</static>
+        <link name="link">
+          <collision name="collision">
+            <geometry><box><size>0.5 0.2 1</size></box></geometry>
+          </collision>
+          <visual name="visual">
+            <geometry><box><size>0.5 0.2 1</size></box></geometry>
+            <material>
+              <ambient>0 1 0 1</ambient>
+              <diffuse>0 1 0 1</diffuse>
+              <specular>0.1 0.1 0.1 1</specular>
+              <emissive>0 0.3 0 1</emissive>
+            </material>
+          </visual> 
+        </link>
+      </model>
+
+      <!-- ================== Start Wall ================== -->
+      <model name="start_wall">
+        <pose>-4.11 -4.5 0 0 0 1.5708</pose>
+        <static>true</static>
+        <link name="link">
+          <collision name="collision">
+            <geometry><box><size>0.5 0.2 1</size></box></geometry>
+          </collision>
+          <visual name="visual">
+            <geometry><box><size>0.5 0.2 1</size></box></geometry>
+            <material>
+              <ambient>1 0 0 1</ambient>     
+              <diffuse>1 0 0 1</diffuse> 
+              <specular>0.1 0.1 0.1 1</specular>
+              <emissive>0.3 0 0 1</emissive>
+            </material>
+          </visual> 
+        </link>
+      </model>
+
+  </world>
+</sdf>

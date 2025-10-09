@@ -5,7 +5,7 @@
 #include <sensor_msgs/msg/laser_scan.hpp>
 #include <nav_msgs/msg/odometry.hpp>
 
-enum class TaylorState { FORWARD, TURN, RIGHT_WALL_FIND };
+enum class TaylorState { FORWARD, TURN };
 
 class TaylorDriver : public rclcpp::Node {
 public:
@@ -30,7 +30,6 @@ private:
   float front_distance_;
   float right_distance_;   // ✅ added
   float left_distance_;
-  float front_right_distance_;
 
   // --- ROS
   rclcpp::Publisher<geometry_msgs::msg::TwistStamped>::SharedPtr pub_;
