@@ -110,15 +110,15 @@ class MazeVisualizer(Node):
     def get_tay_maze_walls(self):
         """
         Return wall definitions from tay_maze.world
-        Robot spawns at (-4.5, -6.0) with yaw=90°, so we rotate maze 90° clockwise
+        Robot spawns at (-4.5, -6.0) with yaw=90°, so we rotate maze 90° CW
         """
         # Robot spawn offset
         spawn_x = -4.5
         spawn_y = -6.0
         
-        # Apply 90° rotation clockwise: new_x = old_y, new_y = -old_x, yaw -= 90°
+        # Apply 90° clockwise rotation: new_x = old_y, new_y = -old_x, yaw -= 90°
         def rotate_wall(x, y, yaw):
-            # Rotate position 90° clockwise around spawn point
+            # Rotate position 90° CW around spawn point
             rel_x = x - spawn_x
             rel_y = y - spawn_y
             new_x = rel_y
@@ -210,7 +210,7 @@ class MazeVisualizer(Node):
     def get_island_maze_walls(self):
         """
         Return wall definitions from island_maze.world
-        Robot spawns at (-4.5, -6.0) with yaw=90°, so we rotate maze 90° CCW
+        Robot spawns at (-4.5, -6.0) with yaw=90°, so we rotate maze 90° CW
         """
         spawn_x = -4.5
         spawn_y = -6.0
@@ -220,7 +220,7 @@ class MazeVisualizer(Node):
             rel_y = y - spawn_y
             new_x = rel_y
             new_y = -rel_x
-            new_yaw = yaw - 1.5708
+            new_yaw = yaw - 1.5708  # Subtract 90°
             return new_x, new_y, new_yaw
         
         walls_raw = [
@@ -277,7 +277,7 @@ class MazeVisualizer(Node):
     def get_open_maze_walls(self):
         """
         Return wall definitions from open_maze.world
-        Robot spawns at (-4.5, -6.0) with yaw=90°, so we rotate maze 90° clockwise
+        Robot spawns at (-4.5, -6.0) with yaw=90°, so we rotate maze 90° CCW
         """
         spawn_x = -4.5
         spawn_y = -6.0
@@ -285,9 +285,9 @@ class MazeVisualizer(Node):
         def rotate_wall(x, y, yaw):
             rel_x = x - spawn_x
             rel_y = y - spawn_y
-            new_x = rel_y
-            new_y = -rel_x
-            new_yaw = yaw - 1.5708
+            new_x = -rel_y
+            new_y = rel_x
+            new_yaw = yaw + 1.5708
             return new_x, new_y, new_yaw
         
         walls_raw = [
