@@ -12,7 +12,6 @@ Usage:
 import rclpy
 from rclpy.node import Node
 from visualization_msgs.msg import Marker, MarkerArray
-from gazebo_msgs.srv import GetEntityState
 from geometry_msgs.msg import Point
 import math
 
