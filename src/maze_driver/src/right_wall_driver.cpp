@@ -25,6 +25,7 @@ double RightWallDriver::normalize_angle(double a)
   return a;
 }
 
+// --- Turning Function ---
 bool RightWallDriver::reached_target_yaw(double tol)
 {
   double diff = normalize_angle(target_yaw_ - current_yaw_);
