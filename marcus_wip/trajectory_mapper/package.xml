@@ -2,7 +2,7 @@
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>trajectory_mapper</name>
-  <version>1.0.0</version>
+  <version>2.0.0</version>
   <description>
     Records and visualises robot trajectory during maze navigation.
     Works with any maze solver by subscribing to odometry data.
@@ -18,9 +18,13 @@
   <depend>nav_msgs</depend>
   <depend>geometry_msgs</depend>
   <depend>visualization_msgs</depend>
+  <depend>tf2</depend>
+  <depend>tf2_ros</depend>
+  <depend>tf2_geometry_msgs</depend>
 
     
   <exec_depend>rclpy</exec_depend>
+  <exec_depend>slam_toolbox</exec_depend>
 
 
   <export>

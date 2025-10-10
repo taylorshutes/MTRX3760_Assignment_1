@@ -13,12 +13,15 @@ TrajectoryMapper::TrajectoryMapper()
       start_y_(0.0),
       first_pose_received_(false),
       min_distance_threshold_(MIN_DISTANCE),
-      total_distance_travelled_(0.0)
+      total_distance_travelled_(0.0),
+      update_counter_(0)
 {
-    odom_sub_ = this->create_subscription<nav_msgs::msg::Odometry>(
-        "/odom",
-        10,
-        std::bind(&TrajectoryMapper::odom_callback, this, std::placeholders::_1));
+    // Declare and get use_sim_time parameter
+    this->declare_parameter("use_sim_time", true);
+    
+    // Initialize TF2 for SLAM-corrected transforms
+    tf_buffer_ = std::make_shared<tf2_ros::Buffer>(this->get_clock());
+    tf_listener_ = std::make_shared<tf2_ros::TransformListener>(*tf_buffer_);
 
     path_pub_ = this->create_publisher<nav_msgs::msg::Path>(
         "/robot_trajectory", 10);
@@ -26,21 +29,27 @@ TrajectoryMapper::TrajectoryMapper()
     marker_pub_ = this->create_publisher<visualization_msgs::msg::Marker>(
         "/trajectory_markers", 10);
 
-    publish_timer_ = this->create_wall_timer(
-        std::chrono::milliseconds(PUBLISH_RATE_MS),
-        std::bind(&TrajectoryMapper::publish_timer_callback, this));
+    // Timer to record trajectory using SLAM transforms
+    timer_ = this->create_wall_timer(
+        std::chrono::milliseconds(UPDATE_RATE_MS),
+        std::bind(&TrajectoryMapper::timer_callback, this));
 
-    trajectory_path_.header.frame_id = "odom";
+    // Use map frame for SLAM-corrected positions
+    trajectory_path_.header.frame_id = "map";
 
     RCLCPP_INFO(this->get_logger(), 
-                "Trajectory Mapper started - recording robot path");
+                "SLAM-based Trajectory Mapper started");
+    RCLCPP_INFO(this->get_logger(), 
+                "Recording drift-corrected path from /map to /base_footprint");
     RCLCPP_INFO(this->get_logger(), 
                 "Minimum recording distance: %.2fm", min_distance_threshold_);
+    RCLCPP_WARN(this->get_logger(),
+                "Waiting for SLAM to initialize... (this may take a few seconds)");
 }
 
 TrajectoryMapper::~TrajectoryMapper()
 {
-    save_trajectory_to_file("trajectory_data.csv");
+    save_trajectory_to_file("trajectory_data_slam.csv");
     
     RCLCPP_INFO(this->get_logger(), 
                 "Trajectory Mapper shutting down");
@@ -50,11 +59,33 @@ TrajectoryMapper::~TrajectoryMapper()
                 "Total waypoints recorded: %zu", trajectory_path_.poses.size());
 }
 
-void TrajectoryMapper::odom_callback(const nav_msgs::msg::Odometry::SharedPtr msg)
+void TrajectoryMapper::timer_callback()
 {
-    double current_x = msg->pose.pose.position.x;
-    double current_y = msg->pose.pose.position.y;
+    geometry_msgs::msg::TransformStamped transform_stamped;
+    
+    try {
+        // Get SLAM-corrected transform from map to robot base
+        transform_stamped = tf_buffer_->lookupTransform(
+            "map",              // Target frame
+            "base_footprint",   // Source frame
+            tf2::TimePointZero  // Get latest available
+        );
+    } catch (tf2::TransformException &ex) {
+        // Only warn occasionally to avoid spam
+        if (update_counter_ % 50 == 0) {
+            RCLCPP_WARN(this->get_logger(), 
+                       "Could not get transform: %s", ex.what());
+            RCLCPP_WARN(this->get_logger(),
+                       "Make sure SLAM Toolbox is running!");
+        }
+        update_counter_++;
+        return;
+    }
 
+    double current_x = transform_stamped.transform.translation.x;
+    double current_y = transform_stamped.transform.translation.y;
+
+    // Record first pose
     if (!first_pose_received_) {
         start_x_ = current_x;
         start_y_ = current_y;
@@ -62,24 +93,35 @@ void TrajectoryMapper::odom_callback(const nav_msgs::msg::Odometry::SharedPtr ms
         last_y_ = current_y;
         first_pose_received_ = true;
 
+        // Add first pose to trajectory
         geometry_msgs::msg::PoseStamped pose_stamped;
-        pose_stamped.header = msg->header;
-        pose_stamped.header.frame_id = "odom";
-        pose_stamped.pose = msg->pose.pose;
+        pose_stamped.header.stamp = this->now();
+        pose_stamped.header.frame_id = "map";
+        pose_stamped.pose.position.x = current_x;
+        pose_stamped.pose.position.y = current_y;
+        pose_stamped.pose.position.z = 0.0;
+        pose_stamped.pose.orientation = transform_stamped.transform.rotation;
+        
         trajectory_path_.poses.push_back(pose_stamped);
 
         RCLCPP_INFO(this->get_logger(), 
-                    "Start position recorded: (%.2f, %.2f)", start_x_, start_y_);
+                    "SLAM initialized! Start position: (%.2f, %.2f)", 
+                    start_x_, start_y_);
         return;
     }
 
+    // Calculate distance travelled since last recorded point
     double distance = calculate_distance(current_x, current_y, last_x_, last_y_);
 
+    // Only record if robot has moved enough
     if (distance >= min_distance_threshold_) {
         geometry_msgs::msg::PoseStamped pose_stamped;
-        pose_stamped.header = msg->header;
-        pose_stamped.header.frame_id = "odom";
-        pose_stamped.pose = msg->pose.pose;
+        pose_stamped.header.stamp = this->now();
+        pose_stamped.header.frame_id = "map";
+        pose_stamped.pose.position.x = current_x;
+        pose_stamped.pose.position.y = current_y;
+        pose_stamped.pose.position.z = 0.0;
+        pose_stamped.pose.orientation = transform_stamped.transform.rotation;
 
         trajectory_path_.poses.push_back(pose_stamped);
 
@@ -87,17 +129,24 @@ void TrajectoryMapper::odom_callback(const nav_msgs::msg::Odometry::SharedPtr ms
         last_x_ = current_x;
         last_y_ = current_y;
 
+        // Log progress every 20 waypoints
         if (trajectory_path_.poses.size() % 20 == 0) {
             RCLCPP_INFO(this->get_logger(), 
-                        "Waypoints: %zu | Distance: %.2fm | Current: (%.2f, %.2f)",
+                        "Waypoints: %zu | Distance: %.2fm | Pos: (%.2f, %.2f)",
                         trajectory_path_.poses.size(),
                         total_distance_travelled_,
                         current_x, current_y);
         }
     }
+
+    // Publish visualization at slower rate
+    update_counter_++;
+    if (update_counter_ % (PUBLISH_RATE_MS / UPDATE_RATE_MS) == 0) {
+        publish_visualization();
+    }
 }
 
-void TrajectoryMapper::publish_timer_callback()
+void TrajectoryMapper::publish_visualization()
 {
     if (trajectory_path_.poses.empty()) {
         return;
@@ -154,7 +203,7 @@ void TrajectoryMapper::save_trajectory_to_file(const std::string& filename)
     file.close();
 
     RCLCPP_INFO(this->get_logger(), 
-                "Trajectory saved to: %s", filename.c_str());
+                "SLAM-corrected trajectory saved to: %s", filename.c_str());
     RCLCPP_INFO(this->get_logger(), 
                 "Saved %zu waypoints", trajectory_path_.poses.size());
 }
@@ -162,7 +211,7 @@ void TrajectoryMapper::save_trajectory_to_file(const std::string& filename)
 visualization_msgs::msg::Marker TrajectoryMapper::create_start_marker()
 {
     visualization_msgs::msg::Marker marker;
-    marker.header.frame_id = "odom";
+    marker.header.frame_id = "map";
     marker.header.stamp = this->now();
     marker.ns = "trajectory";
     marker.id = 0;
@@ -178,6 +227,7 @@ visualization_msgs::msg::Marker TrajectoryMapper::create_start_marker()
     marker.scale.y = 0.2;
     marker.scale.z = 0.2;
 
+    // Green for start
     marker.color.r = 0.0;
     marker.color.g = 1.0;
     marker.color.b = 0.0;
@@ -191,7 +241,7 @@ visualization_msgs::msg::Marker TrajectoryMapper::create_start_marker()
 visualization_msgs::msg::Marker TrajectoryMapper::create_current_marker()
 {
     visualization_msgs::msg::Marker marker;
-    marker.header.frame_id = "odom";
+    marker.header.frame_id = "map";
     marker.header.stamp = this->now();
     marker.ns = "trajectory";
     marker.id = 1;
@@ -209,6 +259,7 @@ visualization_msgs::msg::Marker TrajectoryMapper::create_current_marker()
     marker.scale.y = 0.25;
     marker.scale.z = 0.25;
 
+    // Red for current position
     marker.color.r = 1.0;
     marker.color.g = 0.0;
     marker.color.b = 0.0;
