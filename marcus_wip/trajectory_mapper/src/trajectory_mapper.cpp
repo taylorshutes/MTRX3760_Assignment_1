@@ -5,6 +5,8 @@
 
 using namespace std::chrono_literals;
 
+// ==================== Constructor & Destructor ====================
+
 TrajectoryMapper::TrajectoryMapper() 
     : rclcpp::Node("trajectory_mapper"),
       last_x_(0.0),
@@ -16,13 +18,11 @@ TrajectoryMapper::TrajectoryMapper()
       total_distance_travelled_(0.0),
       update_counter_(0)
 {
-    // Declare and get use_sim_time parameter
-    this->declare_parameter("use_sim_time", true);
-    
     // Initialize TF2 for SLAM-corrected transforms
     tf_buffer_ = std::make_shared<tf2_ros::Buffer>(this->get_clock());
     tf_listener_ = std::make_shared<tf2_ros::TransformListener>(*tf_buffer_);
 
+    // Create publishers
     path_pub_ = this->create_publisher<nav_msgs::msg::Path>(
         "/robot_trajectory", 10);
 
@@ -59,13 +59,36 @@ TrajectoryMapper::~TrajectoryMapper()
                 "Total waypoints recorded: %zu", trajectory_path_.poses.size());
 }
 
+// ==================== Main Control Loop ====================
+
 void TrajectoryMapper::timer_callback()
 {
-    geometry_msgs::msg::TransformStamped transform_stamped;
+    // Attempt to get robot transform from SLAM
+    auto transform = get_robot_transform();
     
+    if (!transform.has_value()) {
+        update_counter_++;
+        return;
+    }
+    
+    // Record position if robot has moved enough
+    record_position(transform.value());
+    
+    // Publish visualization at slower rate (2 Hz instead of 10 Hz)
+    update_counter_++;
+    if (update_counter_ % (PUBLISH_RATE_MS / UPDATE_RATE_MS) == 0) {
+        publish_visualization();
+    }
+}
+
+// ==================== Transform & Recording ====================
+
+std::optional<geometry_msgs::msg::TransformStamped> 
+TrajectoryMapper::get_robot_transform()
+{
     try {
         // Get SLAM-corrected transform from map to robot base
-        transform_stamped = tf_buffer_->lookupTransform(
+        return tf_buffer_->lookupTransform(
             "map",              // Target frame
             "base_footprint",   // Source frame
             tf2::TimePointZero  // Get latest available
@@ -78,14 +101,17 @@ void TrajectoryMapper::timer_callback()
             RCLCPP_WARN(this->get_logger(),
                        "Make sure SLAM Toolbox is running!");
         }
-        update_counter_++;
-        return;
+        return std::nullopt;
     }
+}
 
-    double current_x = transform_stamped.transform.translation.x;
-    double current_y = transform_stamped.transform.translation.y;
+void TrajectoryMapper::record_position(
+    const geometry_msgs::msg::TransformStamped& transform)
+{
+    double current_x = transform.transform.translation.x;
+    double current_y = transform.transform.translation.y;
 
-    // Record first pose
+    // Handle first pose - initialize start position
     if (!first_pose_received_) {
         start_x_ = current_x;
         start_y_ = current_y;
@@ -100,7 +126,7 @@ void TrajectoryMapper::timer_callback()
         pose_stamped.pose.position.x = current_x;
         pose_stamped.pose.position.y = current_y;
         pose_stamped.pose.position.z = 0.0;
-        pose_stamped.pose.orientation = transform_stamped.transform.rotation;
+        pose_stamped.pose.orientation = transform.transform.rotation;
         
         trajectory_path_.poses.push_back(pose_stamped);
 
@@ -121,7 +147,7 @@ void TrajectoryMapper::timer_callback()
         pose_stamped.pose.position.x = current_x;
         pose_stamped.pose.position.y = current_y;
         pose_stamped.pose.position.z = 0.0;
-        pose_stamped.pose.orientation = transform_stamped.transform.rotation;
+        pose_stamped.pose.orientation = transform.transform.rotation;
 
         trajectory_path_.poses.push_back(pose_stamped);
 
@@ -138,13 +164,9 @@ void TrajectoryMapper::timer_callback()
                         current_x, current_y);
         }
     }
-
-    // Publish visualization at slower rate
-    update_counter_++;
-    if (update_counter_ % (PUBLISH_RATE_MS / UPDATE_RATE_MS) == 0) {
-        publish_visualization();
-    }
 }
+
+// ==================== Visualization ====================
 
 void TrajectoryMapper::publish_visualization()
 {
@@ -160,52 +182,6 @@ void TrajectoryMapper::publish_visualization()
 
     auto current_marker = create_current_marker();
     marker_pub_->publish(current_marker);
-}
-
-double TrajectoryMapper::calculate_distance(double x1, double y1, 
-                                            double x2, double y2) const
-{
-    double dx = x2 - x1;
-    double dy = y2 - y1;
-    return std::sqrt(dx * dx + dy * dy);
-}
-
-void TrajectoryMapper::save_trajectory_to_file(const std::string& filename)
-{
-    if (trajectory_path_.poses.empty()) {
-        RCLCPP_WARN(this->get_logger(), "No trajectory data to save");
-        return;
-    }
-
-    std::ofstream file(filename);
-    if (!file.is_open()) {
-        RCLCPP_ERROR(this->get_logger(), 
-                     "Failed to open file: %s", filename.c_str());
-        return;
-    }
-
-    file << "timestamp,x,y,z,qx,qy,qz,qw\n";
-    file << std::fixed << std::setprecision(6);
-
-    for (const auto& pose_stamped : trajectory_path_.poses) {
-        double timestamp = pose_stamped.header.stamp.sec + 
-                          pose_stamped.header.stamp.nanosec * 1e-9;
-        
-        const auto& pos = pose_stamped.pose.position;
-        const auto& orient = pose_stamped.pose.orientation;
-
-        file << timestamp << ","
-             << pos.x << "," << pos.y << "," << pos.z << ","
-             << orient.x << "," << orient.y << "," 
-             << orient.z << "," << orient.w << "\n";
-    }
-
-    file.close();
-
-    RCLCPP_INFO(this->get_logger(), 
-                "SLAM-corrected trajectory saved to: %s", filename.c_str());
-    RCLCPP_INFO(this->get_logger(), 
-                "Saved %zu waypoints", trajectory_path_.poses.size());
 }
 
 visualization_msgs::msg::Marker TrajectoryMapper::create_start_marker()
@@ -268,4 +244,52 @@ visualization_msgs::msg::Marker TrajectoryMapper::create_current_marker()
     marker.lifetime = rclcpp::Duration(0, 0);
 
     return marker;
+}
+
+// ==================== Utilities ====================
+
+double TrajectoryMapper::calculate_distance(double x1, double y1, 
+                                            double x2, double y2) const
+{
+    double dx = x2 - x1;
+    double dy = y2 - y1;
+    return std::sqrt(dx * dx + dy * dy);
+}
+
+void TrajectoryMapper::save_trajectory_to_file(const std::string& filename)
+{
+    if (trajectory_path_.poses.empty()) {
+        RCLCPP_WARN(this->get_logger(), "No trajectory data to save");
+        return;
+    }
+
+    std::ofstream file(filename);
+    if (!file.is_open()) {
+        RCLCPP_ERROR(this->get_logger(), 
+                     "Failed to open file: %s", filename.c_str());
+        return;
+    }
+
+    file << "timestamp,x,y,z,qx,qy,qz,qw\n";
+    file << std::fixed << std::setprecision(6);
+
+    for (const auto& pose_stamped : trajectory_path_.poses) {
+        double timestamp = pose_stamped.header.stamp.sec + 
+                          pose_stamped.header.stamp.nanosec * 1e-9;
+        
+        const auto& pos = pose_stamped.pose.position;
+        const auto& orient = pose_stamped.pose.orientation;
+
+        file << timestamp << ","
+             << pos.x << "," << pos.y << "," << pos.z << ","
+             << orient.x << "," << orient.y << "," 
+             << orient.z << "," << orient.w << "\n";
+    }
+
+    file.close();
+
+    RCLCPP_INFO(this->get_logger(), 
+                "SLAM-corrected trajectory saved to: %s", filename.c_str());
+    RCLCPP_INFO(this->get_logger(), 
+                "Saved %zu waypoints", trajectory_path_.poses.size());
 }

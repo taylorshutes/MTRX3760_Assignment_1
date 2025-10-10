@@ -31,7 +31,6 @@ add_executable(trajectory_mapper_node
 )
 
 # Link dependencies
-
 ament_target_dependencies(trajectory_mapper_node
   rclcpp
   nav_msgs
@@ -57,9 +56,4 @@ install(DIRECTORY include/
   DESTINATION include
 )
 
-# Install Python scripts
-install(PROGRAMS
-  scripts/maze_visualizer.py
-  DESTINATION lib/${PROJECT_NAME}
-)
 ament_package()

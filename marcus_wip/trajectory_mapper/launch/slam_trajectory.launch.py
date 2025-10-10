@@ -42,15 +42,4 @@ def generate_launch_description():
                 {'use_sim_time': True}
             ]
         ),
-        
-        # Launch maze visualizer
-        Node(
-            package='trajectory_mapper',
-            executable='maze_visualizer.py',
-            name='maze_visualizer',
-            output='screen',
-            parameters=[
-                {'use_sim_time': True}
-            ]
-        ),
     ])
