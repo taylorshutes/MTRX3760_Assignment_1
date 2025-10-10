@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Maze Wall Visualizer for RViz
+Maze Wall Visualiser for RViz
 
-Publishes visualization markers representing maze walls for different maze types.
+Publishes visualisation markers representing maze walls for different maze types.
 
 Usage:
     ros2 run trajectory_mapper maze_visualizer.py
@@ -23,10 +23,17 @@ import math
 ACTIVE_MAZE = 'tay_maze'  # Options: 'tay_maze', 'island_maze', 'open_maze'
 # ============================================================
 
+# ============================================================
+# MAZE OFFSET - ADJUST TO MOVE MAZE TOWARDS BOT
+# ============================================================
+MAZE_OFFSET_X = -2.0  # Negative moves left (towards bot at x=-4.5)
+MAZE_OFFSET_Y = 0.0   # Adjust if needed for y-axis offset
+# ============================================================
 
-class MazeVisualizer(Node):
+
+class MazeVisualiser(Node):
     def __init__(self):
-        super().__init__('maze_visualizer')
+        super().__init__('maze_visualiser')
         
         # Publisher for wall markers
         self.marker_pub = self.create_publisher(
@@ -38,10 +45,11 @@ class MazeVisualizer(Node):
         # Timer to publish walls periodically
         self.timer = self.create_timer(2.0, self.publish_maze_walls)
         
-        self.get_logger().info(f'Maze Visualizer started - Active maze: {ACTIVE_MAZE}')
+        self.get_logger().info(f'Maze Visualiser started - Active maze: {ACTIVE_MAZE}')
+        self.get_logger().info(f'Maze offset: x={MAZE_OFFSET_X}, y={MAZE_OFFSET_Y}')
         
     def publish_maze_walls(self):
-        """Publish visualization markers for all maze walls"""
+        """Publish visualisation markers for all maze walls"""
         marker_array = MarkerArray()
         marker_id = 0
         
@@ -62,9 +70,9 @@ class MazeVisualizer(Node):
             marker.type = Marker.CUBE
             marker.action = Marker.ADD
             
-            # Position
-            marker.pose.position.x = wall['x']
-            marker.pose.position.y = wall['y']
+            # Position with offset applied
+            marker.pose.position.x = wall['x'] + MAZE_OFFSET_X
+            marker.pose.position.y = wall['y'] + MAZE_OFFSET_Y
             marker.pose.position.z = 0.5  # Half height of wall
             
             # Orientation
@@ -78,7 +86,7 @@ class MazeVisualizer(Node):
             marker.scale.y = wall['width']
             marker.scale.z = wall['height']
             
-            # Color
+            # Colour
             if 'start' in wall.get('name', ''):
                 # Red for start
                 marker.color.r = 1.0
@@ -336,7 +344,7 @@ class MazeVisualizer(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    node = MazeVisualizer()
+    node = MazeVisualiser()
     
     try:
         rclpy.spin(node)
