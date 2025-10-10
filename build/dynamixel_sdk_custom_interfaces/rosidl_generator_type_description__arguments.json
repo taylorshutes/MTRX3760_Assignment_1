@@ -1,0 +1,12 @@
+{
+  "package_name": "dynamixel_sdk_custom_interfaces",
+  "output_dir": "/home/max-rogers/MTRX3760_Assignment_1/build/dynamixel_sdk_custom_interfaces/rosidl_generator_type_description/dynamixel_sdk_custom_interfaces",
+  "idl_tuples": [
+    "/home/max-rogers/MTRX3760_Assignment_1/build/dynamixel_sdk_custom_interfaces/rosidl_adapter/dynamixel_sdk_custom_interfaces:msg/SetPosition.idl",
+    "/home/max-rogers/MTRX3760_Assignment_1/build/dynamixel_sdk_custom_interfaces/rosidl_adapter/dynamixel_sdk_custom_interfaces:srv/GetPosition.idl"
+  ],
+  "include_paths": [
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces",
+    "service_msgs:/opt/ros/jazzy/share/service_msgs"
+  ]
+}

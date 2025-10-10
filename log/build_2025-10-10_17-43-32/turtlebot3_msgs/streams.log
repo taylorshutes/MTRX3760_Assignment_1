@@ -1,0 +1,473 @@
+[0.028s] Invoking command in '/home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/max-rogers/MTRX3760_Assignment_1/src/turtlebot3_msgs -DCMAKE_INSTALL_PREFIX=/home/max-rogers/MTRX3760_Assignment_1/install
+[0.219s] -- The C compiler identification is GNU 13.3.0
+[0.359s] -- The CXX compiler identification is GNU 13.3.0
+[0.381s] -- Detecting C compiler ABI info
+[0.497s] -- Detecting C compiler ABI info - done
+[0.510s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.510s] -- Detecting C compile features
+[0.511s] -- Detecting C compile features - done
+[0.520s] -- Detecting CXX compiler ABI info
+[0.629s] -- Detecting CXX compiler ABI info - done
+[0.646s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.646s] -- Detecting CXX compile features
+[0.646s] -- Detecting CXX compile features - done
+[0.653s] -- Found action_msgs: 2.0.2 (/opt/ros/jazzy/share/action_msgs/cmake)
+[0.851s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.101s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.130s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.163s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.196s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.304s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[1.333s] -- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[1.340s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[1.397s] -- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[2.602s] -- Found ament_cmake_cppcheck: 0.17.2 (/opt/ros/jazzy/share/ament_cmake_cppcheck/cmake)
+[2.606s] -- Found ament_cmake_cpplint: 0.17.2 (/opt/ros/jazzy/share/ament_cmake_cpplint/cmake)
+[2.613s] -- Found ament_cmake_uncrustify: 0.17.2 (/opt/ros/jazzy/share/ament_cmake_uncrustify/cmake)
+[2.619s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[3.637s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.101s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.109s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[4.309s] -- Found PythonExtra: /usr/bin/python3  
+[5.022s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[5.160s] -- Found ament_cmake_flake8: 0.17.2 (/opt/ros/jazzy/share/ament_cmake_flake8/cmake)
+[5.173s] -- Found ament_cmake_pep257: 0.17.2 (/opt/ros/jazzy/share/ament_cmake_pep257/cmake)
+[5.201s] -- Configuring done (5.1s)
+[5.328s] -- Generating done (0.1s)
+[5.348s] -- Build files have been written to: /home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_msgs
+[5.370s] Invoked command in '/home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/max-rogers/MTRX3760_Assignment_1/src/turtlebot3_msgs -DCMAKE_INSTALL_PREFIX=/home/max-rogers/MTRX3760_Assignment_1/install
+[5.370s] Invoking command in '/home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_msgs -- -j8 -l8
+[5.519s] [  1%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[5.532s] [  1%] Built target ament_cmake_python_copy_turtlebot3_msgs
+[6.023s] running egg_info
+[6.027s] creating turtlebot3_msgs.egg-info
+[6.065s] writing turtlebot3_msgs.egg-info/PKG-INFO
+[6.066s] writing dependency_links to turtlebot3_msgs.egg-info/dependency_links.txt
+[6.067s] writing top-level names to turtlebot3_msgs.egg-info/top_level.txt
+[6.067s] writing manifest file 'turtlebot3_msgs.egg-info/SOURCES.txt'
+[6.218s] reading manifest file 'turtlebot3_msgs.egg-info/SOURCES.txt'
+[6.218s] writing manifest file 'turtlebot3_msgs.egg-info/SOURCES.txt'
+[6.366s] [  1%] Built target ament_cmake_python_build_turtlebot3_msgs_egg
+[6.897s] [  1%] Built target turtlebot3_msgs__rosidl_generator_type_description
+[6.965s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[7.010s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[11.663s] [  3%] Built target turtlebot3_msgs__cpp
+[11.907s] [  4%] [32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlebot3_msgs/msg/detail/sensor_state__functions.c.o[0m
+[11.908s] [  6%] [32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlebot3_msgs/msg/detail/sound__description.c.o[0m
+[11.910s] [  5%] [32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlebot3_msgs/msg/detail/sensor_state__description.c.o[0m
+[11.911s] [  7%] [32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlebot3_msgs/msg/detail/sensor_state__type_support.c.o[0m
+[11.912s] [  8%] [32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlebot3_msgs/msg/detail/version_info__description.c.o[0m
+[11.918s] [  9%] [32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlebot3_msgs/msg/detail/sound__functions.c.o[0m
+[11.919s] [ 10%] [32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlebot3_msgs/msg/detail/sound__type_support.c.o[0m
+[11.930s] [ 11%] [32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlebot3_msgs/msg/detail/version_info__functions.c.o[0m
+[12.006s] [ 12%] [32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlebot3_msgs/msg/detail/version_info__type_support.c.o[0m
+[12.062s] [ 13%] [32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlebot3_msgs/srv/detail/sound__description.c.o[0m
+[12.069s] [ 14%] [32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlebot3_msgs/srv/detail/sound__functions.c.o[0m
+[12.072s] [ 15%] [32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlebot3_msgs/srv/detail/sound__type_support.c.o[0m
+[12.072s] [ 17%] [32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlebot3_msgs/srv/detail/dqn__description.c.o[0m
+[12.109s] [ 18%] [32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlebot3_msgs/srv/detail/dqn__functions.c.o[0m
+[12.137s] [ 19%] [32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlebot3_msgs/srv/detail/goal__description.c.o[0m
+[12.138s] [ 20%] [32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlebot3_msgs/srv/detail/dqn__type_support.c.o[0m
+[12.142s] [ 21%] [32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlebot3_msgs/srv/detail/goal__functions.c.o[0m
+[12.199s] [ 22%] [32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlebot3_msgs/srv/detail/goal__type_support.c.o[0m
+[12.230s] [ 23%] [32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlebot3_msgs/action/detail/patrol__description.c.o[0m
+[12.243s] [ 24%] [32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlebot3_msgs/action/detail/patrol__functions.c.o[0m
+[12.296s] [ 25%] [32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlebot3_msgs/action/detail/patrol__type_support.c.o[0m
+[12.594s] [ 26%] [32m[1mLinking C shared library libturtlebot3_msgs__rosidl_generator_c.so[0m
+[12.736s] [ 26%] Built target turtlebot3_msgs__rosidl_generator_c
+[12.779s] [ 28%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[12.780s] [ 28%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[12.791s] [ 29%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[12.796s] [ 30%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[12.799s] [ 31%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[12.801s] [ 32%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[15.204s] [ 34%] [32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/turtlebot3_msgs/msg/sound__type_support.cpp.o[0m
+[15.210s] [ 36%] [32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/turtlebot3_msgs/msg/version_info__type_support.cpp.o[0m
+[15.211s] [ 37%] [32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/turtlebot3_msgs/msg/sensor_state__type_support.cpp.o[0m
+[15.214s] [ 35%] [32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/turtlebot3_msgs/msg/detail/sensor_state__type_support.cpp.o[0m
+[15.288s] [ 38%] [32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/turtlebot3_msgs/srv/sound__type_support.cpp.o[0m
+[15.318s] [ 39%] [32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/turtlebot3_msgs/msg/detail/sound__type_support.cpp.o[0m
+[15.338s] [ 40%] [32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/turtlebot3_msgs/srv/dqn__type_support.cpp.o[0m
+[15.417s] [ 41%] [32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/turtlebot3_msgs/msg/detail/version_info__type_support.cpp.o[0m
+[15.435s] [ 42%] [32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/turtlebot3_msgs/srv/goal__type_support.cpp.o[0m
+[15.435s] [ 43%] [32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/turtlebot3_msgs/msg/sensor_state__type_support.cpp.o[0m
+[15.547s] [ 44%] [32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/turtlebot3_msgs/action/patrol__type_support.cpp.o[0m
+[15.706s] [ 45%] [32m[1mLinking CXX shared library libturtlebot3_msgs__rosidl_typesupport_c.so[0m
+[15.858s] [ 45%] Built target turtlebot3_msgs__rosidl_typesupport_c
+[15.885s] [ 46%] [32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/turtlebot3_msgs/msg/sound__type_support.cpp.o[0m
+[16.129s] [ 47%] [32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/turtlebot3_msgs/msg/version_info__type_support.cpp.o[0m
+[16.158s] [ 48%] [32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/turtlebot3_msgs/srv/detail/sound__type_support.cpp.o[0m
+[16.194s] [ 50%] [32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/turtlebot3_msgs/srv/detail/dqn__type_support.cpp.o[0m
+[16.280s] [ 51%] [32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/turtlebot3_msgs/srv/detail/goal__type_support.cpp.o[0m
+[16.371s] [ 52%] [32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlebot3_msgs/msg/detail/sensor_state__type_support.c.o[0m
+[16.487s] [ 53%] [32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlebot3_msgs/msg/detail/sound__type_support.c.o[0m
+[16.526s] [ 54%] [32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlebot3_msgs/msg/detail/dds_fastrtps/sensor_state__type_support.cpp.o[0m
+[16.575s] [ 55%] [32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlebot3_msgs/msg/detail/dds_fastrtps/sound__type_support.cpp.o[0m
+[16.629s] [ 56%] [32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlebot3_msgs/msg/detail/version_info__type_support.c.o[0m
+[16.766s] [ 57%] [32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/turtlebot3_msgs/srv/sound__type_support.cpp.o[0m
+[16.777s] [ 58%] [32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlebot3_msgs/srv/detail/sound__type_support.c.o[0m
+[16.900s] [ 59%] [32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlebot3_msgs/srv/detail/dqn__type_support.c.o[0m
+[17.052s] [ 60%] [32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlebot3_msgs/srv/detail/goal__type_support.c.o[0m
+[17.188s] [ 61%] [32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlebot3_msgs/msg/detail/sensor_state__type_support_c.cpp.o[0m
+[17.200s] [ 62%] [32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlebot3_msgs/action/detail/patrol__type_support.c.o[0m
+[17.277s] [ 63%] [32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlebot3_msgs/msg/detail/sound__type_support_c.cpp.o[0m
+[17.318s] [ 64%] [32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlebot3_msgs/msg/detail/dds_fastrtps/version_info__type_support.cpp.o[0m
+[17.511s] [ 65%] [32m[1mLinking C shared library libturtlebot3_msgs__rosidl_typesupport_introspection_c.so[0m
+[17.647s] [ 65%] Built target turtlebot3_msgs__rosidl_typesupport_introspection_c
+[17.665s] [ 67%] [32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/turtlebot3_msgs/action/detail/patrol__type_support.cpp.o[0m
+[17.792s] [ 68%] [32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/turtlebot3_msgs/srv/dqn__type_support.cpp.o[0m
+[17.847s] [ 69%] [32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/turtlebot3_msgs/srv/goal__type_support.cpp.o[0m
+[17.906s] [ 70%] [32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlebot3_msgs/srv/detail/dds_fastrtps/sound__type_support.cpp.o[0m
+[18.021s] [ 71%] [32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlebot3_msgs/srv/detail/dds_fastrtps/dqn__type_support.cpp.o[0m
+[18.495s] [ 72%] [32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/turtlebot3_msgs/action/patrol__type_support.cpp.o[0m
+[18.679s] [ 73%] [32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlebot3_msgs/msg/detail/version_info__type_support_c.cpp.o[0m
+[18.985s] [ 74%] [32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlebot3_msgs/srv/detail/dds_fastrtps/goal__type_support.cpp.o[0m
+[19.091s] [ 75%] [32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlebot3_msgs/srv/detail/sound__type_support_c.cpp.o[0m
+[19.531s] [ 76%] [32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlebot3_msgs/srv/detail/dqn__type_support_c.cpp.o[0m
+[19.701s] [ 77%] [32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlebot3_msgs/action/detail/dds_fastrtps/patrol__type_support.cpp.o[0m
+[19.808s] [ 78%] [32m[1mLinking CXX shared library libturtlebot3_msgs__rosidl_typesupport_cpp.so[0m
+[19.831s] [ 79%] [32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlebot3_msgs/srv/detail/goal__type_support_c.cpp.o[0m
+[20.026s] [ 80%] [32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlebot3_msgs/action/detail/patrol__type_support_c.cpp.o[0m
+[20.135s] [ 81%] [32m[1mLinking CXX shared library libturtlebot3_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[20.205s] [ 81%] Built target turtlebot3_msgs__rosidl_typesupport_cpp
+[20.295s] [ 81%] Built target turtlebot3_msgs__rosidl_typesupport_introspection_cpp
+[21.244s] [ 82%] [32m[1mLinking CXX shared library libturtlebot3_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[21.373s] [ 82%] Built target turtlebot3_msgs__rosidl_typesupport_fastrtps_c
+[21.376s] [ 84%] [32m[1mLinking CXX shared library libturtlebot3_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[21.545s] [ 84%] Built target turtlebot3_msgs__rosidl_typesupport_fastrtps_cpp
+[21.581s] [ 84%] Built target turtlebot3_msgs
+[21.615s] [ 85%] [34m[1mGenerating Python code for ROS interfaces[0m
+[23.690s] [ 85%] Built target turtlebot3_msgs__py
+[23.714s] [ 87%] [32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_generator_py.dir/rosidl_generator_py/turtlebot3_msgs/msg/_sensor_state_s.c.o[0m
+[23.714s] [ 87%] [32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_generator_py.dir/rosidl_generator_py/turtlebot3_msgs/msg/_sound_s.c.o[0m
+[23.715s] [ 88%] [32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_generator_py.dir/rosidl_generator_py/turtlebot3_msgs/srv/_dqn_s.c.o[0m
+[23.720s] [ 89%] [32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_generator_py.dir/rosidl_generator_py/turtlebot3_msgs/action/_patrol_s.c.o[0m
+[23.723s] [ 90%] [32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_generator_py.dir/rosidl_generator_py/turtlebot3_msgs/srv/_sound_s.c.o[0m
+[23.730s] [ 91%] [32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_generator_py.dir/rosidl_generator_py/turtlebot3_msgs/msg/_version_info_s.c.o[0m
+[23.730s] [ 92%] [32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_generator_py.dir/rosidl_generator_py/turtlebot3_msgs/srv/_goal_s.c.o[0m
+[24.118s] [ 93%] [32m[1mLinking C shared library libturtlebot3_msgs__rosidl_generator_py.so[0m
+[24.168s] [ 93%] Built target turtlebot3_msgs__rosidl_generator_py
+[24.195s] [ 94%] [32mBuilding C object CMakeFiles/turtlebot3_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/turtlebot3_msgs/_turtlebot3_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[24.197s] [ 95%] [32mBuilding C object CMakeFiles/turtlebot3_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/turtlebot3_msgs/_turtlebot3_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[24.197s] [ 96%] [32mBuilding C object CMakeFiles/turtlebot3_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/turtlebot3_msgs/_turtlebot3_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[24.465s] [ 97%] [32m[1mLinking C shared module rosidl_generator_py/turtlebot3_msgs/turtlebot3_msgs_s__rosidl_typesupport_introspection_c.so[0m
+[24.465s] [ 98%] [32m[1mLinking C shared module rosidl_generator_py/turtlebot3_msgs/turtlebot3_msgs_s__rosidl_typesupport_c.so[0m
+[24.479s] [100%] [32m[1mLinking C shared module rosidl_generator_py/turtlebot3_msgs/turtlebot3_msgs_s__rosidl_typesupport_fastrtps_c.so[0m
+[24.501s] [100%] Built target turtlebot3_msgs_s__rosidl_typesupport_c
+[24.504s] [100%] Built target turtlebot3_msgs_s__rosidl_typesupport_introspection_c
+[24.515s] [100%] Built target turtlebot3_msgs_s__rosidl_typesupport_fastrtps_c
+[24.526s] Invoked command in '/home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_msgs -- -j8 -l8
+[24.527s] Invoking command in '/home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_msgs
+[24.535s] -- Install configuration: ""
+[24.535s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/ament_index/resource_index/rosidl_interfaces/turtlebot3_msgs
+[24.536s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/msg/SensorState.json
+[24.536s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/msg/Sound.json
+[24.536s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/msg/VersionInfo.json
+[24.536s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/srv/Sound.json
+[24.536s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/srv/Dqn.json
+[24.536s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/srv/Goal.json
+[24.537s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/action/Patrol.json
+[24.537s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs
+[24.537s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/action
+[24.537s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/action/patrol.h
+[24.537s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/action/detail
+[24.537s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/action/detail/patrol__description.c
+[24.537s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/action/detail/patrol__struct.h
+[24.538s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/action/detail/patrol__functions.c
+[24.538s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/action/detail/patrol__functions.h
+[24.538s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/action/detail/patrol__type_support.h
+[24.538s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/action/detail/patrol__type_support.c
+[24.538s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg
+[24.538s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/sound.h
+[24.538s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/sensor_state.h
+[24.539s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail
+[24.539s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sound__type_support.c
+[24.539s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sound__struct.h
+[24.539s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sensor_state__functions.c
+[24.539s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sensor_state__functions.h
+[24.539s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sensor_state__type_support.c
+[24.539s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/version_info__struct.h
+[24.540s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/version_info__type_support.h
+[24.540s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/version_info__description.c
+[24.540s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/version_info__functions.c
+[24.540s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sensor_state__description.c
+[24.540s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sensor_state__struct.h
+[24.540s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sound__functions.h
+[24.540s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sound__description.c
+[24.540s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/version_info__functions.h
+[24.541s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sound__functions.c
+[24.541s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sensor_state__type_support.h
+[24.541s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sound__type_support.h
+[24.541s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/version_info__type_support.c
+[24.541s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/version_info.h
+[24.541s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/rosidl_generator_c__visibility_control.h
+[24.541s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv
+[24.542s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/goal.h
+[24.542s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/sound.h
+[24.542s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/dqn.h
+[24.542s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail
+[24.542s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/sound__type_support.c
+[24.542s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/sound__struct.h
+[24.542s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/goal__type_support.h
+[24.542s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/goal__type_support.c
+[24.543s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/dqn__description.c
+[24.543s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/dqn__functions.h
+[24.543s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/goal__description.c
+[24.543s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/dqn__type_support.c
+[24.543s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/goal__struct.h
+[24.543s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/dqn__functions.c
+[24.543s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/goal__functions.c
+[24.543s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/dqn__struct.h
+[24.544s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/sound__functions.h
+[24.544s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/dqn__type_support.h
+[24.544s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/sound__description.c
+[24.544s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/sound__functions.c
+[24.544s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/goal__functions.h
+[24.544s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/sound__type_support.h
+[24.544s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/environment/library_path.sh
+[24.544s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/environment/library_path.dsv
+[24.544s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/libturtlebot3_msgs__rosidl_generator_c.so
+[24.545s] -- Set non-toolchain portion of runtime path of "/home/max-rogers/MTRX3760_Assignment_1/install/lib/libturtlebot3_msgs__rosidl_generator_c.so" to ""
+[24.545s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs
+[24.545s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/action
+[24.545s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/action/detail
+[24.545s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/action/detail/patrol__rosidl_typesupport_fastrtps_c.h
+[24.545s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg
+[24.546s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[24.546s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail
+[24.546s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sensor_state__rosidl_typesupport_fastrtps_c.h
+[24.546s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sound__rosidl_typesupport_fastrtps_c.h
+[24.546s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/version_info__rosidl_typesupport_fastrtps_c.h
+[24.546s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv
+[24.546s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail
+[24.546s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/goal__rosidl_typesupport_fastrtps_c.h
+[24.547s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/dqn__rosidl_typesupport_fastrtps_c.h
+[24.547s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/sound__rosidl_typesupport_fastrtps_c.h
+[24.547s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/libturtlebot3_msgs__rosidl_typesupport_fastrtps_c.so
+[24.547s] -- Set non-toolchain portion of runtime path of "/home/max-rogers/MTRX3760_Assignment_1/install/lib/libturtlebot3_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[24.547s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs
+[24.547s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/action
+[24.547s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/action/patrol.hpp
+[24.547s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/action/detail
+[24.548s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/action/detail/patrol__builder.hpp
+[24.548s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/action/detail/patrol__struct.hpp
+[24.548s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/action/detail/patrol__traits.hpp
+[24.548s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/action/detail/patrol__type_support.hpp
+[24.548s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg
+[24.548s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/sensor_state.hpp
+[24.548s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/sound.hpp
+[24.548s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[24.549s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail
+[24.549s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sound__type_support.hpp
+[24.549s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/version_info__type_support.hpp
+[24.549s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sensor_state__type_support.hpp
+[24.549s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sensor_state__struct.hpp
+[24.549s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/version_info__builder.hpp
+[24.549s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sound__builder.hpp
+[24.550s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sensor_state__builder.hpp
+[24.550s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sound__struct.hpp
+[24.550s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sound__traits.hpp
+[24.550s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/version_info__struct.hpp
+[24.550s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sensor_state__traits.hpp
+[24.550s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/version_info__traits.hpp
+[24.550s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/version_info.hpp
+[24.551s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv
+[24.551s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/goal.hpp
+[24.551s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/sound.hpp
+[24.551s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/dqn.hpp
+[24.551s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail
+[24.551s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/sound__type_support.hpp
+[24.551s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/dqn__struct.hpp
+[24.551s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/dqn__traits.hpp
+[24.552s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/dqn__type_support.hpp
+[24.552s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/dqn__builder.hpp
+[24.552s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/goal__type_support.hpp
+[24.552s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/goal__traits.hpp
+[24.552s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/goal__struct.hpp
+[24.552s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/sound__builder.hpp
+[24.552s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/goal__builder.hpp
+[24.552s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/sound__struct.hpp
+[24.552s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/sound__traits.hpp
+[24.552s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs
+[24.552s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/action
+[24.553s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/action/detail
+[24.553s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/action/detail/dds_fastrtps
+[24.553s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/action/detail/patrol__rosidl_typesupport_fastrtps_cpp.hpp
+[24.553s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg
+[24.553s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[24.553s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail
+[24.553s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/dds_fastrtps
+[24.553s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sensor_state__rosidl_typesupport_fastrtps_cpp.hpp
+[24.553s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/version_info__rosidl_typesupport_fastrtps_cpp.hpp
+[24.553s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sound__rosidl_typesupport_fastrtps_cpp.hpp
+[24.553s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv
+[24.553s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail
+[24.554s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/dds_fastrtps
+[24.554s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/goal__rosidl_typesupport_fastrtps_cpp.hpp
+[24.554s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/dqn__rosidl_typesupport_fastrtps_cpp.hpp
+[24.554s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/sound__rosidl_typesupport_fastrtps_cpp.hpp
+[24.554s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/libturtlebot3_msgs__rosidl_typesupport_fastrtps_cpp.so
+[24.554s] -- Set non-toolchain portion of runtime path of "/home/max-rogers/MTRX3760_Assignment_1/install/lib/libturtlebot3_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[24.554s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs
+[24.554s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/action
+[24.554s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/action/detail
+[24.554s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/action/detail/patrol__rosidl_typesupport_introspection_c.h
+[24.554s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/action/detail/patrol__type_support.c
+[24.555s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg
+[24.555s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[24.555s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail
+[24.555s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sound__type_support.c
+[24.555s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/version_info__rosidl_typesupport_introspection_c.h
+[24.555s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sensor_state__type_support.c
+[24.555s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sensor_state__rosidl_typesupport_introspection_c.h
+[24.555s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sound__rosidl_typesupport_introspection_c.h
+[24.555s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/version_info__type_support.c
+[24.555s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv
+[24.555s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail
+[24.555s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/sound__type_support.c
+[24.556s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/goal__type_support.c
+[24.556s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/dqn__rosidl_typesupport_introspection_c.h
+[24.556s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/goal__rosidl_typesupport_introspection_c.h
+[24.556s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/dqn__type_support.c
+[24.556s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/sound__rosidl_typesupport_introspection_c.h
+[24.556s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/libturtlebot3_msgs__rosidl_typesupport_introspection_c.so
+[24.556s] -- Set non-toolchain portion of runtime path of "/home/max-rogers/MTRX3760_Assignment_1/install/lib/libturtlebot3_msgs__rosidl_typesupport_introspection_c.so" to ""
+[24.556s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/libturtlebot3_msgs__rosidl_typesupport_c.so
+[24.556s] -- Set non-toolchain portion of runtime path of "/home/max-rogers/MTRX3760_Assignment_1/install/lib/libturtlebot3_msgs__rosidl_typesupport_c.so" to ""
+[24.556s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs
+[24.557s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/action
+[24.557s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/action/detail
+[24.557s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/action/detail/patrol__type_support.cpp
+[24.557s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/action/detail/patrol__rosidl_typesupport_introspection_cpp.hpp
+[24.557s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg
+[24.557s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail
+[24.557s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sensor_state__rosidl_typesupport_introspection_cpp.hpp
+[24.557s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/version_info__type_support.cpp
+[24.557s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sound__rosidl_typesupport_introspection_cpp.hpp
+[24.557s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sensor_state__type_support.cpp
+[24.557s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sound__type_support.cpp
+[24.557s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/version_info__rosidl_typesupport_introspection_cpp.hpp
+[24.557s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv
+[24.558s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail
+[24.558s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/goal__rosidl_typesupport_introspection_cpp.hpp
+[24.558s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/dqn__type_support.cpp
+[24.558s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/sound__rosidl_typesupport_introspection_cpp.hpp
+[24.558s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/dqn__rosidl_typesupport_introspection_cpp.hpp
+[24.558s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/goal__type_support.cpp
+[24.558s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/sound__type_support.cpp
+[24.558s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/libturtlebot3_msgs__rosidl_typesupport_introspection_cpp.so
+[24.558s] -- Set non-toolchain portion of runtime path of "/home/max-rogers/MTRX3760_Assignment_1/install/lib/libturtlebot3_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[24.558s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/libturtlebot3_msgs__rosidl_typesupport_cpp.so
+[24.558s] -- Set non-toolchain portion of runtime path of "/home/max-rogers/MTRX3760_Assignment_1/install/lib/libturtlebot3_msgs__rosidl_typesupport_cpp.so" to ""
+[24.559s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/environment/pythonpath.sh
+[24.559s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/environment/pythonpath.dsv
+[24.559s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs-2.4.0-py3.12.egg-info
+[24.559s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs-2.4.0-py3.12.egg-info/top_level.txt
+[24.559s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs-2.4.0-py3.12.egg-info/PKG-INFO
+[24.559s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs-2.4.0-py3.12.egg-info/dependency_links.txt
+[24.559s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs-2.4.0-py3.12.egg-info/SOURCES.txt
+[24.559s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs
+[24.560s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs/_turtlebot3_msgs_s.ep.rosidl_typesupport_c.c
+[24.560s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs/action
+[24.560s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs/action/_patrol.py
+[24.560s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs/action/__init__.py
+[24.560s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs/action/_patrol_s.c
+[24.560s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs/turtlebot3_msgs_s__rosidl_typesupport_c.so
+[24.560s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs/turtlebot3_msgs_s__rosidl_typesupport_introspection_c.so
+[24.561s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs/msg
+[24.561s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs/msg/_sensor_state.py
+[24.561s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs/msg/_version_info.py
+[24.561s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs/msg/_version_info_s.c
+[24.561s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs/msg/_sound_s.c
+[24.561s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs/msg/__init__.py
+[24.561s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs/msg/_sound.py
+[24.561s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs/msg/_sensor_state_s.c
+[24.562s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs/_turtlebot3_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[24.562s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs/srv
+[24.562s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs/srv/_goal.py
+[24.562s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs/srv/_sound_s.c
+[24.562s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs/srv/__init__.py
+[24.562s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs/srv/_dqn_s.c
+[24.562s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs/srv/_sound.py
+[24.563s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs/srv/_goal_s.c
+[24.563s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs/srv/_dqn.py
+[24.563s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs/__init__.py
+[24.563s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs/_turtlebot3_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[24.563s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs/turtlebot3_msgs_s__rosidl_typesupport_fastrtps_c.so
+[24.623s] Listing '/home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs'...
+[24.624s] Compiling '/home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs/__init__.py'...
+[24.624s] Listing '/home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs/action'...
+[24.624s] Compiling '/home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs/action/__init__.py'...
+[24.624s] Compiling '/home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs/action/_patrol.py'...
+[24.624s] Listing '/home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs/msg'...
+[24.624s] Compiling '/home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs/msg/__init__.py'...
+[24.624s] Compiling '/home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs/msg/_sensor_state.py'...
+[24.624s] Compiling '/home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs/msg/_sound.py'...
+[24.624s] Compiling '/home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs/msg/_version_info.py'...
+[24.625s] Listing '/home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs/srv'...
+[24.625s] Compiling '/home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs/srv/__init__.py'...
+[24.625s] Compiling '/home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs/srv/_dqn.py'...
+[24.625s] Compiling '/home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs/srv/_goal.py'...
+[24.625s] Compiling '/home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs/srv/_sound.py'...
+[24.629s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs/turtlebot3_msgs_s__rosidl_typesupport_fastrtps_c.so
+[24.629s] -- Set non-toolchain portion of runtime path of "/home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs/turtlebot3_msgs_s__rosidl_typesupport_fastrtps_c.so" to ""
+[24.629s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs/turtlebot3_msgs_s__rosidl_typesupport_introspection_c.so
+[24.630s] -- Set non-toolchain portion of runtime path of "/home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs/turtlebot3_msgs_s__rosidl_typesupport_introspection_c.so" to ""
+[24.630s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs/turtlebot3_msgs_s__rosidl_typesupport_c.so
+[24.630s] -- Set non-toolchain portion of runtime path of "/home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_msgs/turtlebot3_msgs_s__rosidl_typesupport_c.so" to ""
+[24.630s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/libturtlebot3_msgs__rosidl_generator_py.so
+[24.631s] -- Set non-toolchain portion of runtime path of "/home/max-rogers/MTRX3760_Assignment_1/install/lib/libturtlebot3_msgs__rosidl_generator_py.so" to ""
+[24.631s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/msg/SensorState.idl
+[24.631s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/msg/Sound.idl
+[24.631s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/msg/VersionInfo.idl
+[24.631s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/srv/Sound.idl
+[24.631s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/srv/Dqn.idl
+[24.631s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/srv/Goal.idl
+[24.632s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/action/Patrol.idl
+[24.632s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/msg/SensorState.msg
+[24.632s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/msg/Sound.msg
+[24.632s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/msg/VersionInfo.msg
+[24.632s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/srv/Sound.srv
+[24.632s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/srv/Dqn.srv
+[24.632s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/srv/Goal.srv
+[24.632s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/action/Patrol.action
+[24.633s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/ament_index/resource_index/package_run_dependencies/turtlebot3_msgs
+[24.633s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/ament_index/resource_index/parent_prefix_path/turtlebot3_msgs
+[24.633s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/environment/ament_prefix_path.sh
+[24.633s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/environment/ament_prefix_path.dsv
+[24.633s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/environment/path.sh
+[24.633s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/environment/path.dsv
+[24.633s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/local_setup.bash
+[24.633s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/local_setup.sh
+[24.634s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/local_setup.zsh
+[24.634s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/local_setup.dsv
+[24.634s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/package.dsv
+[24.634s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/ament_index/resource_index/packages/turtlebot3_msgs
+[24.634s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/cmake/export_turtlebot3_msgs__rosidl_generator_cExport.cmake
+[24.634s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/cmake/export_turtlebot3_msgs__rosidl_generator_cExport-noconfig.cmake
+[24.634s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/cmake/export_turtlebot3_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[24.634s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/cmake/export_turtlebot3_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[24.635s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/cmake/export_turtlebot3_msgs__rosidl_generator_cppExport.cmake
+[24.635s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/cmake/export_turtlebot3_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[24.635s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/cmake/export_turtlebot3_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[24.635s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/cmake/turtlebot3_msgs__rosidl_typesupport_introspection_cExport.cmake
+[24.635s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/cmake/turtlebot3_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[24.635s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/cmake/turtlebot3_msgs__rosidl_typesupport_cExport.cmake
+[24.635s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/cmake/turtlebot3_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[24.635s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/cmake/turtlebot3_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[24.636s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/cmake/turtlebot3_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[24.636s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/cmake/turtlebot3_msgs__rosidl_typesupport_cppExport.cmake
+[24.636s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/cmake/turtlebot3_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[24.636s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/cmake/export_turtlebot3_msgs__rosidl_generator_pyExport.cmake
+[24.636s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/cmake/export_turtlebot3_msgs__rosidl_generator_pyExport-noconfig.cmake
+[24.636s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/cmake/rosidl_cmake-extras.cmake
+[24.636s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[24.636s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[24.637s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[24.637s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[24.637s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[24.637s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[24.637s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/cmake/turtlebot3_msgsConfig.cmake
+[24.637s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/cmake/turtlebot3_msgsConfig-version.cmake
+[24.637s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/package.xml
+[24.638s] Invoked command in '/home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_msgs

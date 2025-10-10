@@ -1,0 +1,56 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "turtlebot3_msgs/action/Patrol_GetResult_Response",
+      "fields": [
+        {
+          "name": "status",
+          "type": {
+            "type_id": 2,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "result",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "turtlebot3_msgs/action/Patrol_Result"
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": [
+      {
+        "type_name": "turtlebot3_msgs/action/Patrol_Result",
+        "fields": [
+          {
+            "name": "result",
+            "type": {
+              "type_id": 17,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      }
+    ]
+  },
+  "type_hashes": [
+    {
+      "type_name": "turtlebot3_msgs/action/Patrol_GetResult_Response",
+      "hash_string": "RIHS01_08ba9c87b18d3c036180ba173b55708a7ba4a3c7e46a7a952806fc00074fb42b"
+    },
+    {
+      "type_name": "turtlebot3_msgs/action/Patrol_Result",
+      "hash_string": "RIHS01_b2c39223dc675516a2e867871873eff7087372c8bd88aa13dcb38cc448386bc8"
+    }
+  ]
+}

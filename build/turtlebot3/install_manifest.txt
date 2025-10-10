@@ -1,0 +1,15 @@
+/home/max-rogers/MTRX3760_Assignment_1/install/share/ament_index/resource_index/package_run_dependencies/turtlebot3
+/home/max-rogers/MTRX3760_Assignment_1/install/share/ament_index/resource_index/parent_prefix_path/turtlebot3
+/home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3/environment/ament_prefix_path.sh
+/home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3/environment/ament_prefix_path.dsv
+/home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3/environment/path.sh
+/home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3/environment/path.dsv
+/home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3/local_setup.bash
+/home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3/local_setup.sh
+/home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3/local_setup.zsh
+/home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3/local_setup.dsv
+/home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3/package.dsv
+/home/max-rogers/MTRX3760_Assignment_1/install/share/ament_index/resource_index/packages/turtlebot3
+/home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3/cmake/turtlebot3Config.cmake
+/home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3/cmake/turtlebot3Config-version.cmake
+/home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3/package.xml

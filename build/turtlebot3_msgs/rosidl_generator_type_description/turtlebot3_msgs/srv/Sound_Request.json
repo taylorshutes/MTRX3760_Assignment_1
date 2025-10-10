@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "turtlebot3_msgs/srv/Sound_Request",
+      "fields": [
+        {
+          "name": "value",
+          "type": {
+            "type_id": 3,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "turtlebot3_msgs/srv/Sound_Request",
+      "hash_string": "RIHS01_2cb19f3db14b691a8c182913020368fd7d7b1d380a69495735474f2067a0fc6a"
+    }
+  ]
+}

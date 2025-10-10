@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+c0d80abd369598d23752e2328bc149e5 CMakeFiles/colour_detector_uninstall

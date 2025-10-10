@@ -1,0 +1,17 @@
+/home/max-rogers/MTRX3760_Assignment_1/install/lib/colour_detector/colour_detector_node
+/home/max-rogers/MTRX3760_Assignment_1/install/include//colour_detector/colour_detector.hpp
+/home/max-rogers/MTRX3760_Assignment_1/install/share/ament_index/resource_index/package_run_dependencies/colour_detector
+/home/max-rogers/MTRX3760_Assignment_1/install/share/ament_index/resource_index/parent_prefix_path/colour_detector
+/home/max-rogers/MTRX3760_Assignment_1/install/share/colour_detector/environment/ament_prefix_path.sh
+/home/max-rogers/MTRX3760_Assignment_1/install/share/colour_detector/environment/ament_prefix_path.dsv
+/home/max-rogers/MTRX3760_Assignment_1/install/share/colour_detector/environment/path.sh
+/home/max-rogers/MTRX3760_Assignment_1/install/share/colour_detector/environment/path.dsv
+/home/max-rogers/MTRX3760_Assignment_1/install/share/colour_detector/local_setup.bash
+/home/max-rogers/MTRX3760_Assignment_1/install/share/colour_detector/local_setup.sh
+/home/max-rogers/MTRX3760_Assignment_1/install/share/colour_detector/local_setup.zsh
+/home/max-rogers/MTRX3760_Assignment_1/install/share/colour_detector/local_setup.dsv
+/home/max-rogers/MTRX3760_Assignment_1/install/share/colour_detector/package.dsv
+/home/max-rogers/MTRX3760_Assignment_1/install/share/ament_index/resource_index/packages/colour_detector
+/home/max-rogers/MTRX3760_Assignment_1/install/share/colour_detector/cmake/colour_detectorConfig.cmake
+/home/max-rogers/MTRX3760_Assignment_1/install/share/colour_detector/cmake/colour_detectorConfig-version.cmake
+/home/max-rogers/MTRX3760_Assignment_1/install/share/colour_detector/package.xml

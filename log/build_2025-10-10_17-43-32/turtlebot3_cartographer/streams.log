@@ -1,0 +1,46 @@
+[0.018s] Invoking command in '/home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_cartographer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/max-rogers/MTRX3760_Assignment_1/src/turtlebot3/turtlebot3_cartographer -DCMAKE_INSTALL_PREFIX=/home/max-rogers/MTRX3760_Assignment_1/install
+[0.203s] -- The C compiler identification is GNU 13.3.0
+[0.345s] -- The CXX compiler identification is GNU 13.3.0
+[0.367s] -- Detecting C compiler ABI info
+[0.483s] -- Detecting C compiler ABI info - done
+[0.496s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.496s] -- Detecting C compile features
+[0.497s] -- Detecting C compile features - done
+[0.507s] -- Detecting CXX compiler ABI info
+[0.617s] -- Detecting CXX compiler ABI info - done
+[0.633s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.633s] -- Detecting CXX compile features
+[0.634s] -- Detecting CXX compile features - done
+[0.641s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.826s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.123s] -- Configuring done (1.1s)
+[1.127s] -- Generating done (0.0s)
+[1.128s] -- Build files have been written to: /home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_cartographer
+[1.134s] Invoked command in '/home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_cartographer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/max-rogers/MTRX3760_Assignment_1/src/turtlebot3/turtlebot3_cartographer -DCMAKE_INSTALL_PREFIX=/home/max-rogers/MTRX3760_Assignment_1/install
+[1.136s] Invoking command in '/home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_cartographer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_cartographer -- -j8 -l8
+[1.184s] Invoked command in '/home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_cartographer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_cartographer -- -j8 -l8
+[1.194s] Invoking command in '/home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_cartographer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_cartographer
+[1.203s] -- Install configuration: ""
+[1.203s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_cartographer/config
+[1.204s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_cartographer/config/turtlebot3_lds_2d.lua
+[1.204s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_cartographer/launch
+[1.205s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_cartographer/launch/occupancy_grid.launch.py
+[1.205s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_cartographer/launch/cartographer.launch.py
+[1.205s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_cartographer/rviz
+[1.205s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_cartographer/rviz/tb3_cartographer.rviz
+[1.205s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/ament_index/resource_index/package_run_dependencies/turtlebot3_cartographer
+[1.206s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/ament_index/resource_index/parent_prefix_path/turtlebot3_cartographer
+[1.206s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_cartographer/environment/ament_prefix_path.sh
+[1.206s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_cartographer/environment/ament_prefix_path.dsv
+[1.206s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_cartographer/environment/path.sh
+[1.206s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_cartographer/environment/path.dsv
+[1.206s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_cartographer/local_setup.bash
+[1.206s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_cartographer/local_setup.sh
+[1.207s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_cartographer/local_setup.zsh
+[1.207s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_cartographer/local_setup.dsv
+[1.207s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_cartographer/package.dsv
+[1.207s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/ament_index/resource_index/packages/turtlebot3_cartographer
+[1.207s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_cartographer/cmake/turtlebot3_cartographerConfig.cmake
+[1.207s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_cartographer/cmake/turtlebot3_cartographerConfig-version.cmake
+[1.207s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_cartographer/package.xml
+[1.211s] Invoked command in '/home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_cartographer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_cartographer

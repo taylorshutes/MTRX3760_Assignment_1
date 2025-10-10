@@ -1,0 +1,21 @@
+{
+  "package_name": "turtlebot3_msgs",
+  "output_dir": "/home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_msgs/rosidl_generator_type_description/turtlebot3_msgs",
+  "idl_tuples": [
+    "/home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:msg/SensorState.idl",
+    "/home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:msg/Sound.idl",
+    "/home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:msg/VersionInfo.idl",
+    "/home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:srv/Sound.idl",
+    "/home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:srv/Dqn.idl",
+    "/home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:srv/Goal.idl",
+    "/home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:action/Patrol.idl"
+  ],
+  "include_paths": [
+    "action_msgs:/opt/ros/jazzy/share/action_msgs",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces",
+    "unique_identifier_msgs:/opt/ros/jazzy/share/unique_identifier_msgs",
+    "service_msgs:/opt/ros/jazzy/share/service_msgs",
+    "std_msgs:/opt/ros/jazzy/share/std_msgs",
+    "geometry_msgs:/opt/ros/jazzy/share/geometry_msgs"
+  ]
+}

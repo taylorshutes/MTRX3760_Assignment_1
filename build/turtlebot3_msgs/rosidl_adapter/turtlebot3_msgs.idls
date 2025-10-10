@@ -1,0 +1,7 @@
+/home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:msg/SensorState.idl
+/home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:msg/Sound.idl
+/home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:msg/VersionInfo.idl
+/home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:srv/Sound.idl
+/home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:srv/Dqn.idl
+/home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:srv/Goal.idl
+/home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:action/Patrol.idl

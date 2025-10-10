@@ -1,0 +1,10 @@
+/home/max-rogers/MTRX3760_Assignment_1/build/colour_detector/CMakeFiles/uninstall.dir
+/home/max-rogers/MTRX3760_Assignment_1/build/colour_detector/CMakeFiles/colour_detector_uninstall.dir
+/home/max-rogers/MTRX3760_Assignment_1/build/colour_detector/CMakeFiles/colour_detector_node.dir
+/home/max-rogers/MTRX3760_Assignment_1/build/colour_detector/CMakeFiles/test.dir
+/home/max-rogers/MTRX3760_Assignment_1/build/colour_detector/CMakeFiles/edit_cache.dir
+/home/max-rogers/MTRX3760_Assignment_1/build/colour_detector/CMakeFiles/rebuild_cache.dir
+/home/max-rogers/MTRX3760_Assignment_1/build/colour_detector/CMakeFiles/list_install_components.dir
+/home/max-rogers/MTRX3760_Assignment_1/build/colour_detector/CMakeFiles/install.dir
+/home/max-rogers/MTRX3760_Assignment_1/build/colour_detector/CMakeFiles/install/local.dir
+/home/max-rogers/MTRX3760_Assignment_1/build/colour_detector/CMakeFiles/install/strip.dir

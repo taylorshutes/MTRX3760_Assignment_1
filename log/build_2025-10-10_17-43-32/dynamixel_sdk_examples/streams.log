@@ -1,0 +1,72 @@
+[0.034s] Invoking command in '/home/max-rogers/MTRX3760_Assignment_1/build/dynamixel_sdk_examples': AMENT_PREFIX_PATH=/home/max-rogers/MTRX3760_Assignment_1/install:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/max-rogers/MTRX3760_Assignment_1/install:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/max-rogers/MTRX3760_Assignment_1/install/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/max-rogers/MTRX3760_Assignment_1/src/DynamixelSDK/ros/dynamixel_sdk_examples -DCMAKE_INSTALL_PREFIX=/home/max-rogers/MTRX3760_Assignment_1/install
+[0.230s] -- The C compiler identification is GNU 13.3.0
+[0.394s] -- The CXX compiler identification is GNU 13.3.0
+[0.444s] -- Detecting C compiler ABI info
+[0.712s] -- Detecting C compiler ABI info - done
+[0.744s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.750s] -- Detecting C compile features
+[0.750s] -- Detecting C compile features - done
+[0.775s] -- Detecting CXX compiler ABI info
+[1.090s] -- Detecting CXX compiler ABI info - done
+[1.138s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.138s] -- Detecting CXX compile features
+[1.138s] -- Detecting CXX compile features - done
+[1.153s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.594s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.911s] -- Found dynamixel_sdk: 3.8.4 (/home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk/cmake)
+[1.918s] -- Found dynamixel_sdk_custom_interfaces: 3.8.4 (/home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_custom_interfaces/cmake)
+[2.076s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[2.140s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[2.248s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.334s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.542s] -- Found rclcpp: 28.1.10 (/opt/ros/jazzy/share/rclcpp/cmake)
+[2.878s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[2.893s] -- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[3.264s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[3.303s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[3.354s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.634s] -- Found rclpy: 7.1.4 (/opt/ros/jazzy/share/rclpy/cmake)
+[3.649s] -- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[4.082s] -- Added test 'copyright' to check source files copyright and LICENSE
+[4.087s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.088s] -- Configured cppcheck include dirs: /home/max-rogers/MTRX3760_Assignment_1/src/DynamixelSDK/ros/dynamixel_sdk_examples/include
+[4.088s] -- Configured cppcheck exclude dirs and/or files: 
+[4.091s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[4.091s] -- Configured cpplint exclude dirs and/or files: 
+[4.098s] -- Added test 'flake8' to check Python code syntax and style conventions
+[4.098s] -- Configured 'flake8' exclude dirs and/or files: 
+[4.106s] -- Added test 'lint_cmake' to check CMake code style
+[4.110s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[4.113s] -- Added test 'uncrustify' to check C / C++ code style
+[4.113s] -- Configured uncrustify additional arguments: 
+[4.118s] -- Added test 'xmllint' to check XML markup files
+[4.127s] -- Configuring done (4.1s)
+[4.179s] -- Generating done (0.0s)
+[4.199s] -- Build files have been written to: /home/max-rogers/MTRX3760_Assignment_1/build/dynamixel_sdk_examples
+[4.254s] Invoked command in '/home/max-rogers/MTRX3760_Assignment_1/build/dynamixel_sdk_examples' returned '0': AMENT_PREFIX_PATH=/home/max-rogers/MTRX3760_Assignment_1/install:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/max-rogers/MTRX3760_Assignment_1/install:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/max-rogers/MTRX3760_Assignment_1/install/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/max-rogers/MTRX3760_Assignment_1/src/DynamixelSDK/ros/dynamixel_sdk_examples -DCMAKE_INSTALL_PREFIX=/home/max-rogers/MTRX3760_Assignment_1/install
+[4.255s] Invoking command in '/home/max-rogers/MTRX3760_Assignment_1/build/dynamixel_sdk_examples': AMENT_PREFIX_PATH=/home/max-rogers/MTRX3760_Assignment_1/install:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/max-rogers/MTRX3760_Assignment_1/install:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/max-rogers/MTRX3760_Assignment_1/install/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/max-rogers/MTRX3760_Assignment_1/build/dynamixel_sdk_examples -- -j8 -l8
+[4.473s] [ 50%] [32mBuilding CXX object CMakeFiles/read_write_node.dir/src/read_write_node.cpp.o[0m
+[18.279s] [100%] [32m[1mLinking CXX executable read_write_node[0m
+[18.958s] [100%] Built target read_write_node
+[18.976s] Invoked command in '/home/max-rogers/MTRX3760_Assignment_1/build/dynamixel_sdk_examples' returned '0': AMENT_PREFIX_PATH=/home/max-rogers/MTRX3760_Assignment_1/install:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/max-rogers/MTRX3760_Assignment_1/install:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/max-rogers/MTRX3760_Assignment_1/install/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/max-rogers/MTRX3760_Assignment_1/build/dynamixel_sdk_examples -- -j8 -l8
+[18.977s] Invoking command in '/home/max-rogers/MTRX3760_Assignment_1/build/dynamixel_sdk_examples': AMENT_PREFIX_PATH=/home/max-rogers/MTRX3760_Assignment_1/install:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/max-rogers/MTRX3760_Assignment_1/install:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/max-rogers/MTRX3760_Assignment_1/install/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/max-rogers/MTRX3760_Assignment_1/build/dynamixel_sdk_examples
+[18.992s] -- Install configuration: ""
+[18.994s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/dynamixel_sdk_examples/read_write_node
+[19.000s] -- Set non-toolchain portion of runtime path of "/home/max-rogers/MTRX3760_Assignment_1/install/lib/dynamixel_sdk_examples/read_write_node" to ""
+[19.001s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/dynamixel_sdk_examples/read_write_node.py
+[19.009s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/ament_index/resource_index/package_run_dependencies/dynamixel_sdk_examples
+[19.009s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/ament_index/resource_index/parent_prefix_path/dynamixel_sdk_examples
+[19.009s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_examples/environment/ament_prefix_path.sh
+[19.009s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_examples/environment/ament_prefix_path.dsv
+[19.009s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_examples/environment/path.sh
+[19.009s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_examples/environment/path.dsv
+[19.009s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_examples/local_setup.bash
+[19.009s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_examples/local_setup.sh
+[19.010s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_examples/local_setup.zsh
+[19.010s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_examples/local_setup.dsv
+[19.010s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_examples/package.dsv
+[19.010s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/ament_index/resource_index/packages/dynamixel_sdk_examples
+[19.010s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_examples/cmake/dynamixel_sdk_examplesConfig.cmake
+[19.010s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_examples/cmake/dynamixel_sdk_examplesConfig-version.cmake
+[19.010s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_examples/package.xml
+[19.019s] Invoked command in '/home/max-rogers/MTRX3760_Assignment_1/build/dynamixel_sdk_examples' returned '0': AMENT_PREFIX_PATH=/home/max-rogers/MTRX3760_Assignment_1/install:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/max-rogers/MTRX3760_Assignment_1/install:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/max-rogers/MTRX3760_Assignment_1/install/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/max-rogers/MTRX3760_Assignment_1/build/dynamixel_sdk_examples

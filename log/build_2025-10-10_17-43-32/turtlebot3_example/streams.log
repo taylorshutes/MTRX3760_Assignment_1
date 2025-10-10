@@ -1,0 +1,79 @@
+[1.133s] Invoking command in '/home/max-rogers/MTRX3760_Assignment_1/src/turtlebot3/turtlebot3_example': AMENT_PREFIX_PATH=/home/max-rogers/MTRX3760_Assignment_1/install:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/max-rogers/MTRX3760_Assignment_1/install:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/max-rogers/MTRX3760_Assignment_1/install/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_example/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages:/home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/turtlebot3_example build --build-base /home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_example/build install --record /home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_example/install.log --single-version-externally-managed install_data
+[1.502s] running egg_info
+[1.502s] creating ../../../build/turtlebot3_example/turtlebot3_example.egg-info
+[1.536s] writing ../../../build/turtlebot3_example/turtlebot3_example.egg-info/PKG-INFO
+[1.537s] writing dependency_links to ../../../build/turtlebot3_example/turtlebot3_example.egg-info/dependency_links.txt
+[1.537s] writing entry points to ../../../build/turtlebot3_example/turtlebot3_example.egg-info/entry_points.txt
+[1.537s] writing requirements to ../../../build/turtlebot3_example/turtlebot3_example.egg-info/requires.txt
+[1.537s] writing top-level names to ../../../build/turtlebot3_example/turtlebot3_example.egg-info/top_level.txt
+[1.537s] writing manifest file '../../../build/turtlebot3_example/turtlebot3_example.egg-info/SOURCES.txt'
+[1.605s] reading manifest file '../../../build/turtlebot3_example/turtlebot3_example.egg-info/SOURCES.txt'
+[1.606s] writing manifest file '../../../build/turtlebot3_example/turtlebot3_example.egg-info/SOURCES.txt'
+[1.606s] running build
+[1.606s] running build_py
+[1.606s] creating /home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_example/build
+[1.606s] creating /home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_example/build/lib
+[1.606s] creating /home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_example/build/lib/turtlebot3_example
+[1.606s] copying turtlebot3_example/__init__.py -> /home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_example/build/lib/turtlebot3_example
+[1.607s] creating /home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_patrol
+[1.607s] copying turtlebot3_example/turtlebot3_patrol/turtlebot3_patrol_client.py -> /home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_patrol
+[1.608s] copying turtlebot3_example/turtlebot3_patrol/turtlebot3_patrol_server.py -> /home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_patrol
+[1.609s] copying turtlebot3_example/turtlebot3_patrol/__init__.py -> /home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_patrol
+[1.609s] creating /home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_obstacle_detection
+[1.609s] copying turtlebot3_example/turtlebot3_obstacle_detection/turtlebot3_obstacle_detection.py -> /home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_obstacle_detection
+[1.609s] copying turtlebot3_example/turtlebot3_obstacle_detection/__init__.py -> /home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_obstacle_detection
+[1.609s] creating /home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_absolute_move
+[1.609s] copying turtlebot3_example/turtlebot3_absolute_move/__init__.py -> /home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_absolute_move
+[1.610s] copying turtlebot3_example/turtlebot3_absolute_move/turtlebot3_absolute_move.py -> /home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_absolute_move
+[1.610s] creating /home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_relative_move
+[1.610s] copying turtlebot3_example/turtlebot3_relative_move/turtlebot3_relative_move.py -> /home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_relative_move
+[1.610s] copying turtlebot3_example/turtlebot3_relative_move/__init__.py -> /home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_relative_move
+[1.610s] creating /home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_interactive_marker
+[1.611s] copying turtlebot3_example/turtlebot3_interactive_marker/__init__.py -> /home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_interactive_marker
+[1.611s] copying turtlebot3_example/turtlebot3_interactive_marker/turtlebot3_interactive_marker.py -> /home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_interactive_marker
+[1.611s] running install
+[1.624s] running install_lib
+[1.657s] creating /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_example
+[1.657s] creating /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_patrol
+[1.658s] copying /home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_patrol/turtlebot3_patrol_client.py -> /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_patrol
+[1.658s] copying /home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_patrol/turtlebot3_patrol_server.py -> /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_patrol
+[1.658s] copying /home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_patrol/__init__.py -> /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_patrol
+[1.658s] creating /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_obstacle_detection
+[1.658s] copying /home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_obstacle_detection/turtlebot3_obstacle_detection.py -> /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_obstacle_detection
+[1.658s] copying /home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_obstacle_detection/__init__.py -> /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_obstacle_detection
+[1.659s] creating /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_absolute_move
+[1.659s] copying /home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_absolute_move/__init__.py -> /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_absolute_move
+[1.659s] copying /home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_absolute_move/turtlebot3_absolute_move.py -> /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_absolute_move
+[1.659s] copying /home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_example/build/lib/turtlebot3_example/__init__.py -> /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_example
+[1.659s] creating /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_relative_move
+[1.659s] copying /home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_relative_move/turtlebot3_relative_move.py -> /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_relative_move
+[1.659s] copying /home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_relative_move/__init__.py -> /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_relative_move
+[1.659s] creating /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_interactive_marker
+[1.660s] copying /home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_interactive_marker/__init__.py -> /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_interactive_marker
+[1.660s] copying /home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_interactive_marker/turtlebot3_interactive_marker.py -> /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_interactive_marker
+[1.660s] byte-compiling /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_patrol/turtlebot3_patrol_client.py to turtlebot3_patrol_client.cpython-312.pyc
+[1.662s] byte-compiling /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_patrol/turtlebot3_patrol_server.py to turtlebot3_patrol_server.cpython-312.pyc
+[1.664s] byte-compiling /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_patrol/__init__.py to __init__.cpython-312.pyc
+[1.664s] byte-compiling /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_obstacle_detection/turtlebot3_obstacle_detection.py to turtlebot3_obstacle_detection.cpython-312.pyc
+[1.665s] byte-compiling /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_obstacle_detection/__init__.py to __init__.cpython-312.pyc
+[1.666s] byte-compiling /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_absolute_move/__init__.py to __init__.cpython-312.pyc
+[1.666s] byte-compiling /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_absolute_move/turtlebot3_absolute_move.py to turtlebot3_absolute_move.cpython-312.pyc
+[1.668s] byte-compiling /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_example/__init__.py to __init__.cpython-312.pyc
+[1.668s] byte-compiling /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_relative_move/turtlebot3_relative_move.py to turtlebot3_relative_move.cpython-312.pyc
+[1.671s] byte-compiling /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_relative_move/__init__.py to __init__.cpython-312.pyc
+[1.671s] byte-compiling /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_interactive_marker/__init__.py to __init__.cpython-312.pyc
+[1.671s] byte-compiling /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_example/turtlebot3_interactive_marker/turtlebot3_interactive_marker.py to turtlebot3_interactive_marker.cpython-312.pyc
+[1.673s] running install_data
+[1.673s] copying resource/turtlebot3_example -> /home/max-rogers/MTRX3760_Assignment_1/install/share/ament_index/resource_index/packages
+[1.674s] copying package.xml -> /home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_example
+[1.674s] running install_egg_info
+[1.711s] Copying ../../../build/turtlebot3_example/turtlebot3_example.egg-info to /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/turtlebot3_example-2.3.3-py3.12.egg-info
+[1.711s] running install_scripts
+[1.913s] Installing turtlebot3_absolute_move script to /home/max-rogers/MTRX3760_Assignment_1/install/lib/turtlebot3_example
+[1.913s] Installing turtlebot3_interactive_marker script to /home/max-rogers/MTRX3760_Assignment_1/install/lib/turtlebot3_example
+[1.913s] Installing turtlebot3_obstacle_detection script to /home/max-rogers/MTRX3760_Assignment_1/install/lib/turtlebot3_example
+[1.913s] Installing turtlebot3_patrol_client script to /home/max-rogers/MTRX3760_Assignment_1/install/lib/turtlebot3_example
+[1.913s] Installing turtlebot3_patrol_server script to /home/max-rogers/MTRX3760_Assignment_1/install/lib/turtlebot3_example
+[1.913s] Installing turtlebot3_relative_move script to /home/max-rogers/MTRX3760_Assignment_1/install/lib/turtlebot3_example
+[1.914s] writing list of installed files to '/home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_example/install.log'
+[1.949s] Invoked command in '/home/max-rogers/MTRX3760_Assignment_1/src/turtlebot3/turtlebot3_example' returned '0': AMENT_PREFIX_PATH=/home/max-rogers/MTRX3760_Assignment_1/install:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/max-rogers/MTRX3760_Assignment_1/install:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/max-rogers/MTRX3760_Assignment_1/install/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_example/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages:/home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/turtlebot3_example build --build-base /home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_example/build install --record /home/max-rogers/MTRX3760_Assignment_1/build/turtlebot3_example/install.log --single-version-externally-managed install_data

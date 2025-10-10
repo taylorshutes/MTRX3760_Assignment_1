@@ -1,0 +1,280 @@
+[0.020s] Invoking command in '/home/max-rogers/MTRX3760_Assignment_1/build/dynamixel_sdk_custom_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/max-rogers/MTRX3760_Assignment_1/src/DynamixelSDK/ros/dynamixel_sdk_custom_interfaces -DCMAKE_INSTALL_PREFIX=/home/max-rogers/MTRX3760_Assignment_1/install
+[0.206s] -- The C compiler identification is GNU 13.3.0
+[0.347s] -- The CXX compiler identification is GNU 13.3.0
+[0.369s] -- Detecting C compiler ABI info
+[0.484s] -- Detecting C compiler ABI info - done
+[0.494s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.494s] -- Detecting C compile features
+[0.495s] -- Detecting C compile features - done
+[0.506s] -- Detecting CXX compiler ABI info
+[0.617s] -- Detecting CXX compiler ABI info - done
+[0.631s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.632s] -- Detecting CXX compile features
+[0.632s] -- Detecting CXX compile features - done
+[0.643s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.833s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.011s] -- Found builtin_interfaces: 2.0.2 (/opt/ros/jazzy/share/builtin_interfaces/cmake)
+[1.085s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.118s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.149s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.183s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.216s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[1.246s] -- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[2.464s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[3.252s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.596s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.604s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[3.801s] -- Found PythonExtra: /usr/bin/python3  
+[4.790s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[4.902s] -- Configuring done (4.8s)
+[5.009s] -- Generating done (0.1s)
+[5.051s] -- Build files have been written to: /home/max-rogers/MTRX3760_Assignment_1/build/dynamixel_sdk_custom_interfaces
+[5.080s] Invoked command in '/home/max-rogers/MTRX3760_Assignment_1/build/dynamixel_sdk_custom_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/max-rogers/MTRX3760_Assignment_1/src/DynamixelSDK/ros/dynamixel_sdk_custom_interfaces -DCMAKE_INSTALL_PREFIX=/home/max-rogers/MTRX3760_Assignment_1/install
+[5.083s] Invoking command in '/home/max-rogers/MTRX3760_Assignment_1/build/dynamixel_sdk_custom_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/max-rogers/MTRX3760_Assignment_1/build/dynamixel_sdk_custom_interfaces -- -j8 -l8
+[5.227s] [  2%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[5.250s] [  2%] Built target ament_cmake_python_copy_dynamixel_sdk_custom_interfaces
+[5.835s] running egg_info
+[5.837s] creating dynamixel_sdk_custom_interfaces.egg-info
+[5.868s] writing dynamixel_sdk_custom_interfaces.egg-info/PKG-INFO
+[5.868s] writing dependency_links to dynamixel_sdk_custom_interfaces.egg-info/dependency_links.txt
+[5.868s] writing top-level names to dynamixel_sdk_custom_interfaces.egg-info/top_level.txt
+[5.870s] writing manifest file 'dynamixel_sdk_custom_interfaces.egg-info/SOURCES.txt'
+[5.969s] reading manifest file 'dynamixel_sdk_custom_interfaces.egg-info/SOURCES.txt'
+[5.969s] writing manifest file 'dynamixel_sdk_custom_interfaces.egg-info/SOURCES.txt'
+[6.023s] [  2%] Built target ament_cmake_python_build_dynamixel_sdk_custom_interfaces_egg
+[6.109s] [  2%] Built target dynamixel_sdk_custom_interfaces__rosidl_generator_type_description
+[6.142s] [  4%] [34m[1mGenerating C code for ROS interfaces[0m
+[6.190s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[7.318s] [  6%] Built target dynamixel_sdk_custom_interfaces__cpp
+[7.691s] [  9%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/get_position__description.c.o[0m
+[7.693s] [ 13%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/msg/detail/set_position__description.c.o[0m
+[7.694s] [ 13%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/msg/detail/set_position__type_support.c.o[0m
+[7.703s] [ 15%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/msg/detail/set_position__functions.c.o[0m
+[7.708s] [ 18%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/get_position__functions.c.o[0m
+[7.710s] [ 20%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/get_position__type_support.c.o[0m
+[8.007s] [ 22%] [32m[1mLinking C shared library libdynamixel_sdk_custom_interfaces__rosidl_generator_c.so[0m
+[8.085s] [ 22%] Built target dynamixel_sdk_custom_interfaces__rosidl_generator_c
+[8.116s] [ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[8.116s] [ 27%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[8.122s] [ 29%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[8.128s] [ 31%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[8.136s] [ 34%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[8.141s] [ 36%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[8.920s] [ 38%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/srv/detail/get_position__type_support.c.o[0m
+[8.924s] [ 40%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/msg/detail/set_position__type_support.c.o[0m
+[9.022s] [ 43%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/msg/detail/set_position__type_support_c.cpp.o[0m
+[9.054s] [ 45%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/srv/detail/get_position__type_support_c.cpp.o[0m
+[9.123s] [ 47%] [32m[1mLinking C shared library libdynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c.so[0m
+[9.231s] [ 47%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c
+[9.561s] [ 50%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/msg/detail/set_position__type_support.cpp.o[0m
+[9.573s] [ 52%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/msg/set_position__type_support.cpp.o[0m
+[9.584s] [ 54%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/srv/detail/get_position__type_support.cpp.o[0m
+[9.610s] [ 56%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/get_position__type_support.cpp.o[0m
+[9.643s] [ 59%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/msg/set_position__type_support.cpp.o[0m
+[9.885s] [ 61%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/srv/get_position__type_support.cpp.o[0m
+[9.986s] [ 63%] [32m[1mLinking CXX shared library libdynamixel_sdk_custom_interfaces__rosidl_typesupport_c.so[0m
+[10.109s] [ 63%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_c
+[10.299s] [ 65%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/msg/detail/dds_fastrtps/set_position__type_support.cpp.o[0m
+[10.301s] [ 68%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/srv/detail/dds_fastrtps/get_position__type_support.cpp.o[0m
+[10.513s] [ 70%] [32m[1mLinking CXX shared library libdynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[10.698s] [ 72%] [32m[1mLinking CXX shared library libdynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[10.891s] [ 72%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp
+[10.897s] [ 72%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c
+[10.964s] [ 75%] [32m[1mLinking CXX shared library libdynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.so[0m
+[11.283s] [ 75%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp
+[11.421s] [ 77%] [32m[1mLinking CXX shared library libdynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[11.687s] [ 77%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp
+[11.738s] [ 77%] Built target dynamixel_sdk_custom_interfaces
+[11.806s] [ 79%] [34m[1mGenerating Python code for ROS interfaces[0m
+[13.589s] [ 79%] Built target dynamixel_sdk_custom_interfaces__py
+[13.664s] [ 81%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dynamixel_sdk_custom_interfaces/msg/_set_position_s.c.o[0m
+[13.670s] [ 84%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dynamixel_sdk_custom_interfaces/srv/_get_position_s.c.o[0m
+[14.189s] [ 86%] [32m[1mLinking C shared library libdynamixel_sdk_custom_interfaces__rosidl_generator_py.so[0m
+[14.315s] [ 86%] Built target dynamixel_sdk_custom_interfaces__rosidl_generator_py
+[14.417s] [ 88%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/dynamixel_sdk_custom_interfaces/_dynamixel_sdk_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[14.419s] [ 90%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/dynamixel_sdk_custom_interfaces/_dynamixel_sdk_custom_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[14.425s] [ 93%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/dynamixel_sdk_custom_interfaces/_dynamixel_sdk_custom_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[14.788s] [ 95%] [32m[1mLinking C shared module rosidl_generator_py/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_fastrtps_c.so[0m
+[14.816s] [ 97%] [32m[1mLinking C shared module rosidl_generator_py/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_introspection_c.so[0m
+[14.905s] [100%] [32m[1mLinking C shared module rosidl_generator_py/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_c.so[0m
+[14.906s] [100%] Built target dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_introspection_c
+[14.910s] [100%] Built target dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_fastrtps_c
+[15.007s] [100%] Built target dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_c
+[15.038s] Invoked command in '/home/max-rogers/MTRX3760_Assignment_1/build/dynamixel_sdk_custom_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/max-rogers/MTRX3760_Assignment_1/build/dynamixel_sdk_custom_interfaces -- -j8 -l8
+[15.039s] Invoking command in '/home/max-rogers/MTRX3760_Assignment_1/build/dynamixel_sdk_custom_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/max-rogers/MTRX3760_Assignment_1/build/dynamixel_sdk_custom_interfaces
+[15.056s] -- Install configuration: ""
+[15.057s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/ament_index/resource_index/rosidl_interfaces/dynamixel_sdk_custom_interfaces
+[15.061s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_custom_interfaces/msg/SetPosition.json
+[15.061s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_custom_interfaces/srv/GetPosition.json
+[15.061s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces
+[15.061s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg
+[15.061s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/set_position.h
+[15.062s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail
+[15.062s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__functions.h
+[15.062s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__type_support.h
+[15.062s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__struct.h
+[15.065s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__functions.c
+[15.065s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__type_support.c
+[15.065s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__description.c
+[15.065s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/rosidl_generator_c__visibility_control.h
+[15.066s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv
+[15.066s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/get_position.h
+[15.066s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail
+[15.066s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__description.c
+[15.066s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__type_support.h
+[15.067s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__struct.h
+[15.067s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__functions.c
+[15.067s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__functions.h
+[15.070s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__type_support.c
+[15.070s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_custom_interfaces/environment/library_path.sh
+[15.070s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_custom_interfaces/environment/library_path.dsv
+[15.070s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/libdynamixel_sdk_custom_interfaces__rosidl_generator_c.so
+[15.071s] -- Set non-toolchain portion of runtime path of "/home/max-rogers/MTRX3760_Assignment_1/install/lib/libdynamixel_sdk_custom_interfaces__rosidl_generator_c.so" to ""
+[15.071s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces
+[15.071s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg
+[15.071s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[15.071s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail
+[15.072s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__rosidl_typesupport_fastrtps_c.h
+[15.072s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv
+[15.073s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail
+[15.073s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__rosidl_typesupport_fastrtps_c.h
+[15.075s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.so
+[15.075s] -- Set non-toolchain portion of runtime path of "/home/max-rogers/MTRX3760_Assignment_1/install/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[15.075s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces
+[15.076s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg
+[15.076s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/set_position.hpp
+[15.076s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[15.080s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail
+[15.080s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__traits.hpp
+[15.080s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__builder.hpp
+[15.080s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__struct.hpp
+[15.080s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__type_support.hpp
+[15.080s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv
+[15.080s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/get_position.hpp
+[15.080s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail
+[15.081s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__traits.hpp
+[15.081s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__struct.hpp
+[15.081s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__type_support.hpp
+[15.081s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__builder.hpp
+[15.081s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces
+[15.081s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg
+[15.081s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[15.081s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail
+[15.081s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__rosidl_typesupport_fastrtps_cpp.hpp
+[15.082s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/dds_fastrtps
+[15.082s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv
+[15.082s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail
+[15.082s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/dds_fastrtps
+[15.082s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__rosidl_typesupport_fastrtps_cpp.hpp
+[15.082s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[15.082s] -- Set non-toolchain portion of runtime path of "/home/max-rogers/MTRX3760_Assignment_1/install/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[15.082s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces
+[15.082s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg
+[15.083s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[15.083s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail
+[15.083s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__type_support.c
+[15.083s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__rosidl_typesupport_introspection_c.h
+[15.083s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv
+[15.084s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail
+[15.088s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__rosidl_typesupport_introspection_c.h
+[15.088s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__type_support.c
+[15.088s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c.so
+[15.088s] -- Set non-toolchain portion of runtime path of "/home/max-rogers/MTRX3760_Assignment_1/install/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[15.088s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_c.so
+[15.088s] -- Set non-toolchain portion of runtime path of "/home/max-rogers/MTRX3760_Assignment_1/install/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_c.so" to ""
+[15.088s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces
+[15.088s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg
+[15.088s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail
+[15.089s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__type_support.cpp
+[15.089s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__rosidl_typesupport_introspection_cpp.hpp
+[15.089s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv
+[15.089s] -- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail
+[15.089s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__rosidl_typesupport_introspection_cpp.hpp
+[15.090s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__type_support.cpp
+[15.090s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp.so
+[15.090s] -- Set non-toolchain portion of runtime path of "/home/max-rogers/MTRX3760_Assignment_1/install/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[15.090s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.so
+[15.090s] -- Set non-toolchain portion of runtime path of "/home/max-rogers/MTRX3760_Assignment_1/install/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.so" to ""
+[15.090s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_custom_interfaces/environment/pythonpath.sh
+[15.091s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_custom_interfaces/environment/pythonpath.dsv
+[15.091s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces-3.8.4-py3.12.egg-info
+[15.091s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces-3.8.4-py3.12.egg-info/top_level.txt
+[15.091s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces-3.8.4-py3.12.egg-info/PKG-INFO
+[15.091s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces-3.8.4-py3.12.egg-info/dependency_links.txt
+[15.091s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces-3.8.4-py3.12.egg-info/SOURCES.txt
+[15.091s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces
+[15.091s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_introspection_c.so
+[15.092s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[15.092s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/msg
+[15.092s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/msg/_set_position.py
+[15.092s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/msg/_set_position_s.c
+[15.092s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/msg/__init__.py
+[15.092s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/srv
+[15.092s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/srv/_get_position.py
+[15.092s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/srv/_get_position_s.c
+[15.096s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/srv/__init__.py
+[15.096s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/_dynamixel_sdk_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[15.096s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/__init__.py
+[15.096s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/_dynamixel_sdk_custom_interfaces_s.ep.rosidl_typesupport_c.c
+[15.096s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/_dynamixel_sdk_custom_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[15.096s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_c.so
+[15.164s] Listing '/home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces'...
+[15.164s] Compiling '/home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/__init__.py'...
+[15.164s] Listing '/home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/msg'...
+[15.164s] Compiling '/home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/msg/__init__.py'...
+[15.164s] Compiling '/home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/msg/_set_position.py'...
+[15.164s] Listing '/home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/srv'...
+[15.165s] Compiling '/home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/srv/__init__.py'...
+[15.165s] Compiling '/home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/srv/_get_position.py'...
+[15.172s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[15.173s] -- Set non-toolchain portion of runtime path of "/home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_fastrtps_c.so" to ""
+[15.174s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_introspection_c.so
+[15.174s] -- Set non-toolchain portion of runtime path of "/home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_introspection_c.so" to ""
+[15.175s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_c.so
+[15.175s] -- Set non-toolchain portion of runtime path of "/home/max-rogers/MTRX3760_Assignment_1/install/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_c.so" to ""
+[15.176s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/libdynamixel_sdk_custom_interfaces__rosidl_generator_py.so
+[15.176s] -- Set non-toolchain portion of runtime path of "/home/max-rogers/MTRX3760_Assignment_1/install/lib/libdynamixel_sdk_custom_interfaces__rosidl_generator_py.so" to ""
+[15.176s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_custom_interfaces/msg/SetPosition.idl
+[15.177s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_custom_interfaces/srv/GetPosition.idl
+[15.177s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_custom_interfaces/msg/SetPosition.msg
+[15.177s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_custom_interfaces/srv/GetPosition.srv
+[15.178s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/ament_index/resource_index/package_run_dependencies/dynamixel_sdk_custom_interfaces
+[15.178s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/ament_index/resource_index/parent_prefix_path/dynamixel_sdk_custom_interfaces
+[15.179s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_custom_interfaces/environment/ament_prefix_path.sh
+[15.179s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_custom_interfaces/environment/ament_prefix_path.dsv
+[15.179s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_custom_interfaces/environment/path.sh
+[15.180s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_custom_interfaces/environment/path.dsv
+[15.180s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_custom_interfaces/local_setup.bash
+[15.181s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_custom_interfaces/local_setup.sh
+[15.181s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_custom_interfaces/local_setup.zsh
+[15.181s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_custom_interfaces/local_setup.dsv
+[15.181s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_custom_interfaces/package.dsv
+[15.182s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/ament_index/resource_index/packages/dynamixel_sdk_custom_interfaces
+[15.182s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_custom_interfaces/cmake/export_dynamixel_sdk_custom_interfaces__rosidl_generator_cExport.cmake
+[15.182s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_custom_interfaces/cmake/export_dynamixel_sdk_custom_interfaces__rosidl_generator_cExport-noconfig.cmake
+[15.183s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_custom_interfaces/cmake/export_dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[15.183s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_custom_interfaces/cmake/export_dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[15.183s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_custom_interfaces/cmake/export_dynamixel_sdk_custom_interfaces__rosidl_generator_cppExport.cmake
+[15.184s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_custom_interfaces/cmake/export_dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[15.184s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_custom_interfaces/cmake/export_dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[15.184s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[15.185s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[15.185s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cExport.cmake
+[15.186s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[15.186s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[15.186s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[15.187s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cppExport.cmake
+[15.187s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[15.187s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_custom_interfaces/cmake/export_dynamixel_sdk_custom_interfaces__rosidl_generator_pyExport.cmake
+[15.188s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_custom_interfaces/cmake/export_dynamixel_sdk_custom_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[15.188s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_custom_interfaces/cmake/rosidl_cmake-extras.cmake
+[15.189s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_custom_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[15.189s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_custom_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[15.189s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_custom_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[15.190s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_custom_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[15.190s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_custom_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[15.191s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_custom_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[15.191s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfacesConfig.cmake
+[15.191s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfacesConfig-version.cmake
+[15.198s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk_custom_interfaces/package.xml
+[15.198s] Invoked command in '/home/max-rogers/MTRX3760_Assignment_1/build/dynamixel_sdk_custom_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/max-rogers/MTRX3760_Assignment_1/build/dynamixel_sdk_custom_interfaces

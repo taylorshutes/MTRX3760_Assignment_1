@@ -1,0 +1,56 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found rclcpp: 28.1.10 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+-- Found cv_bridge: 4.1.0 (/opt/ros/jazzy/share/cv_bridge/cmake)
+-- Found image_transport: 5.1.7 (/opt/ros/jazzy/share/image_transport/cmake)
+-- Found OpenCV: /usr (found version "4.6.0") 
+-- Configuring done (2.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/max-rogers/MTRX3760_Assignment_1/build/colour_detector
+[ 33%] [32mBuilding CXX object CMakeFiles/colour_detector_node.dir/src/colour_detector.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/colour_detector_node.dir/src/main.cpp.o[0m
+[100%] [32m[1mLinking CXX executable colour_detector_node[0m
+[100%] Built target colour_detector_node
+-- Install configuration: ""
+-- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/colour_detector/colour_detector_node
+-- Set non-toolchain portion of runtime path of "/home/max-rogers/MTRX3760_Assignment_1/install/lib/colour_detector/colour_detector_node" to ""
+-- Up-to-date: /home/max-rogers/MTRX3760_Assignment_1/install/include/
+-- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include//colour_detector
+-- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/include//colour_detector/colour_detector.hpp
+-- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/ament_index/resource_index/package_run_dependencies/colour_detector
+-- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/ament_index/resource_index/parent_prefix_path/colour_detector
+-- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/colour_detector/environment/ament_prefix_path.sh
+-- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/colour_detector/environment/ament_prefix_path.dsv
+-- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/colour_detector/environment/path.sh
+-- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/colour_detector/environment/path.dsv
+-- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/colour_detector/local_setup.bash
+-- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/colour_detector/local_setup.sh
+-- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/colour_detector/local_setup.zsh
+-- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/colour_detector/local_setup.dsv
+-- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/colour_detector/package.dsv
+-- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/ament_index/resource_index/packages/colour_detector
+-- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/colour_detector/cmake/colour_detectorConfig.cmake
+-- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/colour_detector/cmake/colour_detectorConfig-version.cmake
+-- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/colour_detector/package.xml

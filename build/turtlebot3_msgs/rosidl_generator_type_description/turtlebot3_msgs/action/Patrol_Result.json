@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "turtlebot3_msgs/action/Patrol_Result",
+      "fields": [
+        {
+          "name": "result",
+          "type": {
+            "type_id": 17,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "turtlebot3_msgs/action/Patrol_Result",
+      "hash_string": "RIHS01_b2c39223dc675516a2e867871873eff7087372c8bd88aa13dcb38cc448386bc8"
+    }
+  ]
+}

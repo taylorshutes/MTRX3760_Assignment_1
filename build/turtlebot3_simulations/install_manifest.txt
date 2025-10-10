@@ -1,0 +1,15 @@
+/home/max-rogers/MTRX3760_Assignment_1/install/share/ament_index/resource_index/package_run_dependencies/turtlebot3_simulations
+/home/max-rogers/MTRX3760_Assignment_1/install/share/ament_index/resource_index/parent_prefix_path/turtlebot3_simulations
+/home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_simulations/environment/ament_prefix_path.sh
+/home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_simulations/environment/ament_prefix_path.dsv
+/home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_simulations/environment/path.sh
+/home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_simulations/environment/path.dsv
+/home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_simulations/local_setup.bash
+/home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_simulations/local_setup.sh
+/home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_simulations/local_setup.zsh
+/home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_simulations/local_setup.dsv
+/home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_simulations/package.dsv
+/home/max-rogers/MTRX3760_Assignment_1/install/share/ament_index/resource_index/packages/turtlebot3_simulations
+/home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_simulations/cmake/turtlebot3_simulationsConfig.cmake
+/home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_simulations/cmake/turtlebot3_simulationsConfig-version.cmake
+/home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_simulations/package.xml

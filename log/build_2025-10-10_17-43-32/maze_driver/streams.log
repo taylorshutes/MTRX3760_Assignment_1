@@ -1,0 +1,60 @@
+[0.014s] Invoking command in '/home/max-rogers/MTRX3760_Assignment_1/build/maze_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/max-rogers/MTRX3760_Assignment_1/src/maze_driver -DCMAKE_INSTALL_PREFIX=/home/max-rogers/MTRX3760_Assignment_1/install
+[0.079s] -- The C compiler identification is GNU 13.3.0
+[0.198s] -- The CXX compiler identification is GNU 13.3.0
+[0.248s] -- Detecting C compiler ABI info
+[0.497s] -- Detecting C compiler ABI info - done
+[0.523s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.524s] -- Detecting C compile features
+[0.525s] -- Detecting C compile features - done
+[0.552s] -- Detecting CXX compiler ABI info
+[0.829s] -- Detecting CXX compiler ABI info - done
+[0.868s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.871s] -- Detecting CXX compile features
+[0.872s] -- Detecting CXX compile features - done
+[0.879s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.098s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.269s] -- Found rclcpp: 28.1.10 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.337s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.357s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.375s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.397s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.488s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.492s] -- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.589s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.622s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.649s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.748s] -- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[1.788s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[1.815s] -- Found nav_msgs: 5.3.6 (/opt/ros/jazzy/share/nav_msgs/cmake)
+[1.855s] -- Found tf2: 0.36.12 (/opt/ros/jazzy/share/tf2/cmake)
+[1.976s] -- Configuring done (2.0s)
+[1.993s] -- Generating done (0.0s)
+[1.998s] -- Build files have been written to: /home/max-rogers/MTRX3760_Assignment_1/build/maze_driver
+[2.012s] Invoked command in '/home/max-rogers/MTRX3760_Assignment_1/build/maze_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/max-rogers/MTRX3760_Assignment_1/src/maze_driver -DCMAKE_INSTALL_PREFIX=/home/max-rogers/MTRX3760_Assignment_1/install
+[2.025s] Invoking command in '/home/max-rogers/MTRX3760_Assignment_1/build/maze_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/max-rogers/MTRX3760_Assignment_1/build/maze_driver -- -j8 -l8
+[2.073s] [ 50%] [32mBuilding CXX object CMakeFiles/maze_driver_node.dir/src/main.cpp.o[0m
+[2.073s] [ 75%] [32mBuilding CXX object CMakeFiles/maze_driver_node.dir/src/base_driver.cpp.o[0m
+[2.073s] [ 50%] [32mBuilding CXX object CMakeFiles/maze_driver_node.dir/src/right_wall_driver.cpp.o[0m
+[28.386s] [100%] [32m[1mLinking CXX executable maze_driver_node[0m
+[29.493s] [100%] Built target maze_driver_node
+[29.514s] Invoked command in '/home/max-rogers/MTRX3760_Assignment_1/build/maze_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/max-rogers/MTRX3760_Assignment_1/build/maze_driver -- -j8 -l8
+[29.515s] Invoking command in '/home/max-rogers/MTRX3760_Assignment_1/build/maze_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/max-rogers/MTRX3760_Assignment_1/build/maze_driver
+[29.526s] -- Install configuration: ""
+[29.526s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/lib/maze_driver/maze_driver_node
+[29.536s] -- Set non-toolchain portion of runtime path of "/home/max-rogers/MTRX3760_Assignment_1/install/lib/maze_driver/maze_driver_node" to ""
+[29.539s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/ament_index/resource_index/package_run_dependencies/maze_driver
+[29.539s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/ament_index/resource_index/parent_prefix_path/maze_driver
+[29.539s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/maze_driver/environment/ament_prefix_path.sh
+[29.539s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/maze_driver/environment/ament_prefix_path.dsv
+[29.539s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/maze_driver/environment/path.sh
+[29.539s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/maze_driver/environment/path.dsv
+[29.540s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/maze_driver/local_setup.bash
+[29.540s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/maze_driver/local_setup.sh
+[29.540s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/maze_driver/local_setup.zsh
+[29.540s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/maze_driver/local_setup.dsv
+[29.540s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/maze_driver/package.dsv
+[29.540s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/ament_index/resource_index/packages/maze_driver
+[29.540s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/maze_driver/cmake/maze_driverConfig.cmake
+[29.540s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/maze_driver/cmake/maze_driverConfig-version.cmake
+[29.542s] -- Installing: /home/max-rogers/MTRX3760_Assignment_1/install/share/maze_driver/package.xml
+[29.543s] Invoked command in '/home/max-rogers/MTRX3760_Assignment_1/build/maze_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/max-rogers/MTRX3760_Assignment_1/build/maze_driver

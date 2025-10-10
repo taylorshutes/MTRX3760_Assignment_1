@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "dynamixel_sdk_custom_interfaces/srv/GetPosition_Response",
+      "fields": [
+        {
+          "name": "position",
+          "type": {
+            "type_id": 6,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "dynamixel_sdk_custom_interfaces/srv/GetPosition_Response",
+      "hash_string": "RIHS01_2dfb97033dae11320ad31805c048ce3f5adb5b27594295e4a8ca86e75d3a5f6c"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+/home/max-rogers/MTRX3760_Assignment_1/build/dynamixel_sdk_examples/CMakeFiles/uninstall.dir
+/home/max-rogers/MTRX3760_Assignment_1/build/dynamixel_sdk_examples/CMakeFiles/dynamixel_sdk_examples_uninstall.dir
+/home/max-rogers/MTRX3760_Assignment_1/build/dynamixel_sdk_examples/CMakeFiles/read_write_node.dir
+/home/max-rogers/MTRX3760_Assignment_1/build/dynamixel_sdk_examples/CMakeFiles/test.dir
+/home/max-rogers/MTRX3760_Assignment_1/build/dynamixel_sdk_examples/CMakeFiles/edit_cache.dir
+/home/max-rogers/MTRX3760_Assignment_1/build/dynamixel_sdk_examples/CMakeFiles/rebuild_cache.dir
+/home/max-rogers/MTRX3760_Assignment_1/build/dynamixel_sdk_examples/CMakeFiles/list_install_components.dir
+/home/max-rogers/MTRX3760_Assignment_1/build/dynamixel_sdk_examples/CMakeFiles/install.dir
+/home/max-rogers/MTRX3760_Assignment_1/build/dynamixel_sdk_examples/CMakeFiles/install/local.dir
+/home/max-rogers/MTRX3760_Assignment_1/build/dynamixel_sdk_examples/CMakeFiles/install/strip.dir

@@ -1,0 +1,10 @@
+# generated from colcon_core/shell/template/command_prefix.sh.em
+. "/home/max-rogers/MTRX3760_Assignment_1/install/share/dynamixel_sdk/package.sh"
+. "/home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_cartographer/package.sh"
+. "/home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_description/package.sh"
+. "/home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_msgs/package.sh"
+. "/home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_navigation2/package.sh"
+. "/home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_teleop/package.sh"
+. "/home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_example/package.sh"
+. "/home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_node/package.sh"
+. "/home/max-rogers/MTRX3760_Assignment_1/install/share/turtlebot3_bringup/package.sh"
